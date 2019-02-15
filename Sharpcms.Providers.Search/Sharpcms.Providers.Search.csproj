@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sharpcms.Base.Library\Sharpcms.Base.Library.csproj" />
+    <ProjectReference Include="..\Sharpcms.Data.SiteTree\Sharpcms.Data.SiteTree.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Highlighter.Net">
+      <HintPath>..\..\sharpcms-original\sources\resources\Highlighter.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net">
+      <HintPath>..\..\sharpcms-original\sources\resources\Lucene.Net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
