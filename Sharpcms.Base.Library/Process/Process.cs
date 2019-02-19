@@ -1,13 +1,14 @@
 // sharpcms is licensed under the open source license GPL - GNU General Public License.
 
+using Microsoft.AspNetCore.Http;
+using Sharpcms.Base.Library.Common;
+using Sharpcms.Base.Library.Http;
+using Sharpcms.Base.Library.Plugin;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using System.Xml;
-using Sharpcms.Base.Library.Common;
-using Sharpcms.Base.Library.Http;
-using Sharpcms.Base.Library.Plugin;
 
 namespace Sharpcms.Base.Library.Process
 {
@@ -21,7 +22,7 @@ namespace Sharpcms.Base.Library.Process
         private Dictionary<String, String> _variables;
         public String MainTemplate; //ToDo: this should be more logical
         public bool OutputHandledByModule;
-        public readonly Page HttpPage;
+        public readonly HttpPage HttpPage;
         public readonly PluginServices Plugins;
         public readonly ControlList Content;
         public readonly XmlItemList Attributes;
@@ -29,7 +30,7 @@ namespace Sharpcms.Base.Library.Process
         public readonly XmlItemList QueryEvents;
         public readonly XmlItemList QueryOther;
 
-        public Process(Page httpPage, PluginServices pluginServices)
+        public Process(HttpPage httpPage, PluginServices pluginServices)
         {
             _currentProcess = String.Empty;
 
@@ -56,12 +57,12 @@ namespace Sharpcms.Base.Library.Process
             var useragent = httpPage.Server.UrlEncode(httpPage.Request.ServerVariables["HTTP_USER_AGENT"]);
             Content["useragent"].InnerText = useragent ?? String.Empty;
 
-            var sessionid = httpPage.Server.UrlEncode(httpPage.Session.LCID.ToString(CultureInfo.InvariantCulture));
+            var sessionid = httpPage.Server.UrlEncode(httpPage.Session.Id.ToString(CultureInfo.InvariantCulture));
             Content["sessionid"].InnerText = sessionid ?? String.Empty;
 
             var ip = httpPage.Server.UrlEncode(httpPage.Request.ServerVariables["REMOTE_ADDR"]);
             Content["ip"].InnerText = ip ?? String.Empty;
-            
+
             Attributes = new XmlItemList(CommonXml.GetNode(xmlNode, "attributes", EmptyNodeHandling.CreateNew));
             QueryData = new XmlItemList(CommonXml.GetNode(xmlNode, "query/data", EmptyNodeHandling.CreateNew));
             QueryEvents = new XmlItemList(CommonXml.GetNode(xmlNode, "query/events", EmptyNodeHandling.CreateNew));
@@ -148,7 +149,7 @@ namespace Sharpcms.Base.Library.Process
             return errorUrl;
         }
 
-        private String GetBasePath(Page httpPage)
+        private String GetBasePath(HttpPage httpPage)
         {
             var basePath = String.Empty;
 
@@ -157,7 +158,7 @@ namespace Sharpcms.Base.Library.Process
                 var serverProtocol = httpPage.Request.ServerVariables["SERVER_PROTOCOL"].Split('/')[0].ToLower();
                 var serverName = httpPage.Request.ServerVariables["SERVER_NAME"];
                 var serverPort = httpPage.Request.ServerVariables["SERVER_PORT"];
-                string applicationPath = httpPage.Request.ApplicationPath.TrimEnd('/');
+                var applicationPath = httpPage.Request.ApplicationPath.TrimEnd('/');
 
                 basePath = String.Format("{0}://{1}", serverProtocol, serverName);
 
@@ -185,8 +186,8 @@ namespace Sharpcms.Base.Library.Process
             }
             set
             {
-                HttpPage.Session["enabledebug"] = value 
-                    ? "true" 
+                HttpPage.Session["enabledebug"] = value
+                    ? "true"
                     : "false";
             }
         }
@@ -217,8 +218,8 @@ namespace Sharpcms.Base.Library.Process
                 {
                     var process = QueryOther["process"];
 
-                    _currentProcess = process != String.Empty 
-                        ? process 
+                    _currentProcess = process != String.Empty
+                        ? process
                         : Settings["general/stdprocess"];
                 }
 
@@ -259,8 +260,8 @@ namespace Sharpcms.Base.Library.Process
                     Logout();
                 }
 
-                return HttpPage.Session["current_username"] != null 
-                    ? HttpPage.Session["current_username"].ToString() 
+                return HttpPage.Session["current_username"] != null
+                    ? HttpPage.Session["current_username"].ToString()
                     : String.Empty;
             }
         }
@@ -357,8 +358,8 @@ namespace Sharpcms.Base.Library.Process
         private void ProcessQueries()
         {
             List<String> keys = HttpPage.Request.Form.Cast<String>().ToList();
-            
-            keys.AddRange(HttpPage.Request.QueryString.Cast<String>());
+
+            keys.AddRange(HttpPage.Request.Query.Cast<String>());
 
             foreach (var key in keys)
             {
@@ -408,8 +409,8 @@ namespace Sharpcms.Base.Library.Process
 
         private IEnumerable<String> History()
         {
-            var history = HttpPage.Session["history"] != null 
-                ? (List<String>) HttpPage.Session["history"]
+            var history = HttpPage.Session["history"] != null
+                ? (List<String>)HttpPage.Session["history"]
                 : new List<String>();
 
             history.Add(CurrentProcess);
@@ -424,7 +425,7 @@ namespace Sharpcms.Base.Library.Process
 
             if (HttpPage.Session["pageviews"] != null)
             {
-                pageViewCounts = (Dictionary<String, int>) HttpPage.Session["pageviews"];
+                pageViewCounts = (Dictionary<String, int>)HttpPage.Session["pageviews"];
 
                 if (pageViewCounts.ContainsKey(CurrentProcess))
                 {
@@ -452,7 +453,7 @@ namespace Sharpcms.Base.Library.Process
 
             Logout();
             var results = Plugins.InvokeAll("users", "verify", username, password);
-            
+
             if (results.Length > 0)
             {
                 var verified = false;
@@ -467,13 +468,11 @@ namespace Sharpcms.Base.Library.Process
 
                 if (verified)
                 {
-                    var httpCookie = HttpPage.Response.Cookies["login_cookie"];
-
-                    if (httpCookie != null)
+                    var value = String.Format("{0}{1}{2}", username, CookieSeparator, password);
+                    HttpPage.Response.Cookies.Append("login_cookie", value, new CookieOptions
                     {
-                        httpCookie.Value = String.Format("{0}{1}{2}", username, CookieSeparator, password);
-                        httpCookie.Expires = DateTime.Now.AddDays(1);
-                    }
+                        Expires = DateTimeOffset.Now.AddDays(1)
+                    });
 
                     HttpPage.Session["current_username"] = username;
                     success = true;
@@ -488,11 +487,11 @@ namespace Sharpcms.Base.Library.Process
             if (CurrentUser == "anonymous")
             {
                 var httpCookie = HttpPage.Request.Cookies["login_cookie"];
-                
+
                 if (httpCookie != null)
                 {
-                    var value = httpCookie.Value;
-                    
+                    var value = httpCookie;
+
                     if (value != null && value.Contains(CookieSeparator))
                     {
                         var valueParts = Common.Common.SplitByString(value, CookieSeparator);
@@ -522,7 +521,7 @@ namespace Sharpcms.Base.Library.Process
             if (groups != String.Empty)
             {
                 var groupList = groups.Split(',');
-                
+
                 valid = groupList.Any(userGroups.Contains);
             }
 
@@ -533,12 +532,11 @@ namespace Sharpcms.Base.Library.Process
         {
             HttpPage.Session.Clear();
             HttpPage.Session["current_username"] = "anonymous";
-            var httpCookie = HttpPage.Response.Cookies["login_cookie"];
-
-            if (httpCookie != null)
+            HttpPage.Response.Cookies.Delete("login_cookie", new CookieOptions
             {
-                httpCookie.Expires = DateTime.Now.AddDays(-1);
-            }
+                Expires = DateTimeOffset.Now.AddDays(-1)
+            });
+
         }
     }
 }

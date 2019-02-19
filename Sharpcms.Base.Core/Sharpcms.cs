@@ -1,5 +1,6 @@
 // sharpcms is licensed under the open source license GPL - GNU General Public License.
 
+using Microsoft.AspNetCore.Http;
 using Sharpcms.Base.Library;
 using Sharpcms.Base.Library.Common;
 using Sharpcms.Base.Library.Http;
@@ -9,20 +10,23 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 
 namespace Sharpcms
 {
     public static class Sharpcms
     {
-        public static void Send(Page page)
+        public static async Task Send(HttpContext context)
         {
+            var page = new HttpPage(context);
+
             PrepareConfiguration(page);
             var processHandler = new ProcessHandler();
             var process = processHandler.Run(page);
 
             if (!process.OutputHandledByModule && process.RedirectUrl == null)
             {
-                Parse(page, process);
+                await Parse(page, process);
             }
 
             if (process.RedirectUrl != null)
@@ -31,15 +35,16 @@ namespace Sharpcms
             }
         }
 
-        public static void Request(HttpContext httpContext, String entryPageName)
+        public static void Request(HttpContext context, String entryPageName)
         {
-            var httpRequest = httpContext.Request;
+            var page = new HttpPage(context);
+            var httpRequest = page.Request;
             var applicationPath = httpRequest.ApplicationPath;
 
             if (applicationPath != null)
             {
                 var currentUrl = httpRequest.Path;
-                var file = httpContext.Server.MapPath(currentUrl.Substring(currentUrl.LastIndexOf("/", StringComparison.Ordinal) + 1));
+                var file = page.Server.MapPath(currentUrl.Substring(currentUrl.LastIndexOf("/", StringComparison.Ordinal) + 1));
 
                 if (!File.Exists(file))
                 {
@@ -49,12 +54,12 @@ namespace Sharpcms
                         ? String.Format("~/{0}.aspx?process={1}&{2}", entryPageName, process, querystring)
                         : String.Format("~/{0}.aspx?process={1}", entryPageName, process);
 
-                    httpContext.RewritePath(rewritePath);
+                    page.Response.Redirect(rewritePath); // RewritePath
                 }
             }
         }
 
-        private static void PrepareConfiguration(Page httpPage)
+        private static void PrepareConfiguration(HttpPage httpPage)
         {
             var cache = new Cache(httpPage.Application);
 
@@ -74,13 +79,13 @@ namespace Sharpcms
             Configuration.CombineProcessTree(processPaths, cache);
         }
 
-        private static void Parse(Page httpPage, Process process)
+        private static async Task Parse(HttpPage httpPage, Process process)
         {
             if (process.QueryEvents["xml"] == "true")
             {
                 httpPage.Response.AddHeader("Content-Type", "text/xml");
-                httpPage.Response.Write("<?xml version=\"1.0\" encoding=\"utf-8\" ?>");
-                httpPage.Response.Write(process.XmlData.OuterXml);
+                await httpPage.Response.WriteAsync("<?xml version=\"1.0\" encoding=\"utf-8\" ?>");
+                await httpPage.Response.WriteAsync(process.XmlData.OuterXml);
             }
             else
             {
@@ -104,7 +109,7 @@ namespace Sharpcms
                         output = output.Replace(match.Groups["email"].Value, HtmlObfuscate(match.Groups["email"].Value));
                     }
 
-                    httpPage.Response.Write(output);
+                    await httpPage.Response.WriteAsync(output);
                 }
             }
         }

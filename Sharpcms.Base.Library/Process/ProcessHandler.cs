@@ -17,7 +17,7 @@ namespace Sharpcms.Base.Library.Process
     {
         private PluginServices _plugins;
 
-        public Process Run(Page httpPage)
+        public Process Run(HttpPage httpPage)
         {
             _plugins = new PluginServices();
             var process = new Process(httpPage, _plugins);
@@ -294,7 +294,7 @@ namespace Sharpcms.Base.Library.Process
             output = output.Replace("{domain}", process.HttpPage.Request.Url.Host);
             output = output.Replace("{process}", process.CurrentProcess);
             output = output.Replace("{user}", process.CurrentUser);
-            output = output.Replace("{params}", string.Join("\n", (from string key in process.HttpPage.Request.Params.Keys select string.Format("{0} = {1}", key, process.HttpPage.Request.Params[key])).ToArray()));
+            output = output.Replace("{params}", string.Join("\n", (from string key in process.HttpPage.Request.Keys select string.Format("{0} = {1}", key, process.HttpPage.Request[key])).ToArray()));
 
             return output;
         }

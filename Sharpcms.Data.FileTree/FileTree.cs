@@ -7,7 +7,9 @@ using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 using System.Web;
+using Microsoft.AspNetCore.Http;
 using Sharpcms.Base.Library;
 using Sharpcms.Base.Library.Common;
 using Sharpcms.Base.Library.Http;
@@ -84,24 +86,27 @@ namespace Sharpcms.Data.FileTree
 
             for (int fileIndex = 0; fileIndex < fileCount; fileIndex++)
             {
-                HttpPostedFile file = _process.HttpPage.Request.Files[fileIndex];
+                var file = _process.HttpPage.Request.Files[fileIndex];
 
-                if (path != null && file.ContentLength > 0)
+                if (path != null && file.Length > 0)
                 {
-                    String prepend = _process.QueryOther["file_prepend"];
+                    var prepend = _process.QueryOther["file_prepend"];
                     prepend = !String.IsNullOrEmpty(prepend) 
                         ? prepend + "_" 
                         : String.Empty;
 
-                    String filename = String.Join("_", Common.CleanToSafeString(Path.GetFileName(file.FileName)).Split(' '));
-                    String fullName = Common.CombinePaths(_rootFilesPath, path, prepend + filename);
+                    var filename = String.Join("_", Common.CleanToSafeString(Path.GetFileName(file.FileName)).Split(' '));
+                    var fullName = Common.CombinePaths(_rootFilesPath, path, prepend + filename);
                     if (Common.PathIsInSite(fullName) && filename != String.Empty)
                     {
-                        file.SaveAs(fullName);
+                        using(var fs = new FileStream(fullName, FileMode.CreateNew, FileAccess.Write))
+                        {
+                            file.CopyTo(fs);
+                        }
                         files[fileIndex] = fullName;
                     }
                 }
-                else if (path != null && file.ContentLength == 0 && file.FileName != String.Empty)
+                else if (path != null && file.Length == 0 && file.FileName != String.Empty)
                 {
                     _process.AddMessage(
                         String.Format("The file \"{0}\" was ignored because it was empty.", file.FileName),
@@ -110,18 +115,18 @@ namespace Sharpcms.Data.FileTree
             }
         }
 
-        public void SendToBrowser(String filename)
+        public async Task SendToBrowser(String filename)
         {
-            HttpResponse response = _process.HttpPage.Response;
+            var response = _process.HttpPage.Response;
 
-            FileInfo fileInfo = new FileInfo(Path.Combine(_rootFilesPath, filename));
+            var fileInfo = new FileInfo(Path.Combine(_rootFilesPath, filename));
             if (!fileInfo.FullName.StartsWith(_rootFilesPath)) return;
 
             if (fileInfo.Exists)
             {
                 response.Clear();
 
-                String currentFile = fileInfo.FullName;
+                var currentFile = fileInfo.FullName;
                 if (Common.IsValidImage(currentFile) && HasImageRenderProperties())
                 {
                     currentFile = RenderImage(fileInfo);
@@ -143,9 +148,8 @@ namespace Sharpcms.Data.FileTree
                 response.AddHeader("Content-Type", Common.GetMimeType(file.Extension));
                 response.Cache.SetExpires(DateTime.Now + new TimeSpan(7, 0, 0, 0));
                 response.Cache.SetCacheability(HttpCacheability.Public);
-                response.WriteFile(currentFile);
-                response.Flush();
-                response.End();
+                await response.WriteFile(currentFile);
+
             }
         }
 

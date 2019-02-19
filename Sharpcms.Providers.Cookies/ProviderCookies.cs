@@ -1,11 +1,11 @@
 ﻿// sharpcms is licensed under the open source license GPL - GNU General Public License.
 
-using System;
-using System.Web;
+using Microsoft.AspNetCore.Http;
 using Sharpcms.Base.Library.Common;
-using Sharpcms.Base.Library.Http;
 using Sharpcms.Base.Library.Plugin;
 using Sharpcms.Base.Library.Process;
+using System;
+using System.Web;
 
 namespace Sharpcms.Providers.Cookies
 {
@@ -60,12 +60,14 @@ namespace Sharpcms.Providers.Cookies
 
         private void HandleCookies()
         {
-            foreach (var key in Process.HttpPage.Request.QueryString.Keys)
+            foreach (var key in Process.HttpPage.Request.Query.Keys)
             {
                 if (Process.Settings["general/cookies"].Contains("," + key + ","))
                 {
-                    var cookie = new HttpCookie(key, Process.HttpPage.Request.QueryString[key]) { Expires = DateTime.Now.AddDays(1) };
-                    HttpContext.Current.Response.Cookies.Add(cookie);
+                    Process.HttpPage.Response.Cookies.Append(key, Process.HttpPage.Request.Query[key], new CookieOptions
+                    {
+                        Expires = DateTimeOffset.Now.AddDays(1)
+                    });
                 }
             }
         }
@@ -74,14 +76,14 @@ namespace Sharpcms.Providers.Cookies
         {
             var cookieData = new XmlItemList(CommonXml.GetNode(control.ParentNode, "items", EmptyNodeHandling.CreateNew));
 
-            foreach (String key in Process.HttpPage.Response.Cookies.Keys)
+            foreach (String key in Process.HttpPage.Request.Cookies.Keys)
             {
                 if (Process.Settings["general/cookies"].Contains("," + key + ","))
                 {
-                    var httpCookie = Process.HttpPage.Response.Cookies[key];
+                    var httpCookie = Process.HttpPage.Request.Cookies[key];
                     if (httpCookie != null)
                     {
-                        cookieData[key.Replace(".", String.Empty)] = HttpUtility.UrlEncode(httpCookie.Value);
+                        cookieData[key.Replace(".", String.Empty)] = HttpUtility.UrlEncode(httpCookie);
                     }
                 }
             }
@@ -93,7 +95,7 @@ namespace Sharpcms.Providers.Cookies
                     var httpCookie = Process.HttpPage.Request.Cookies[key];
                     if (httpCookie != null)
                     {
-                        cookieData[key.Replace(".", String.Empty)] = HttpUtility.UrlEncode(httpCookie.Value);
+                        cookieData[key.Replace(".", String.Empty)] = HttpUtility.UrlEncode(httpCookie);
                     }
                 }
             }

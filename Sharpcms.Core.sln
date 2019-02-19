@@ -3,23 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sharpcms.Base.Core", "Sharpcms.Base.Core\Sharpcms.Base.Core.csproj", "{87BFCB2C-3655-4866-9286-1DB444B4C612}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sharpcms.Base.Core", "Sharpcms.Base.Core\Sharpcms.Base.Core.csproj", "{87BFCB2C-3655-4866-9286-1DB444B4C612}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sharpcms.Base.Library", "Sharpcms.Base.Library\Sharpcms.Base.Library.csproj", "{C0D5962A-01FB-4D09-939F-C867BE4275F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sharpcms.Base.Library", "Sharpcms.Base.Library\Sharpcms.Base.Library.csproj", "{C0D5962A-01FB-4D09-939F-C867BE4275F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sharpcms.Base.PluginInterfaces", "Sharpcms.Base.PluginInterfaces\Sharpcms.Base.PluginInterfaces.csproj", "{232EF069-2904-45A8-8FD5-9946A603353F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sharpcms.Base.PluginInterfaces", "Sharpcms.Base.PluginInterfaces\Sharpcms.Base.PluginInterfaces.csproj", "{232EF069-2904-45A8-8FD5-9946A603353F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sharpcms.Data.SiteTree", "Sharpcms.Data.SiteTree\Sharpcms.Data.SiteTree.csproj", "{978F26F1-13C9-4AB4-B1D7-50039FC3996D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sharpcms.Data.SiteTree", "Sharpcms.Data.SiteTree\Sharpcms.Data.SiteTree.csproj", "{978F26F1-13C9-4AB4-B1D7-50039FC3996D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sharpcms.Data.FileTree", "Sharpcms.Data.FileTree\Sharpcms.Data.FileTree.csproj", "{D5F083F8-B129-470C-A505-BEE41CB404F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sharpcms.Data.FileTree", "Sharpcms.Data.FileTree\Sharpcms.Data.FileTree.csproj", "{D5F083F8-B129-470C-A505-BEE41CB404F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sharpcms.Providers.Base", "Sharpcms.Providers.Base\Sharpcms.Providers.Base.csproj", "{EF4CF489-5E09-4596-A7DD-F34BCFD1F9AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sharpcms.Providers.Base", "Sharpcms.Providers.Base\Sharpcms.Providers.Base.csproj", "{EF4CF489-5E09-4596-A7DD-F34BCFD1F9AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sharpcms.Providers.Cookies", "Sharpcms.Providers.Cookies\Sharpcms.Providers.Cookies.csproj", "{5AB2AF9F-EE84-4B85-B27D-8465328C2448}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sharpcms.Providers.Cookies", "Sharpcms.Providers.Cookies\Sharpcms.Providers.Cookies.csproj", "{5AB2AF9F-EE84-4B85-B27D-8465328C2448}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sharpcms.Providers.ErrorLog", "Sharpcms.Providers.ErrorLog\Sharpcms.Providers.ErrorLog.csproj", "{0F067179-A5C2-422A-8934-52790334E2A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sharpcms.Providers.ErrorLog", "Sharpcms.Providers.ErrorLog\Sharpcms.Providers.ErrorLog.csproj", "{0F067179-A5C2-422A-8934-52790334E2A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sharpcms.Providers.Search", "Sharpcms.Providers.Search\Sharpcms.Providers.Search.csproj", "{27C5BB99-2EB4-49E7-814C-3BC37A2D047C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sharpcms.Providers.Search", "Sharpcms.Providers.Search\Sharpcms.Providers.Search.csproj", "{27C5BB99-2EB4-49E7-814C-3BC37A2D047C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sharpcms.Core", "Sharpcms.Core\Sharpcms.Core.csproj", "{8C5DDE60-E166-416C-82A9-F704B3A98227}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,9 +31,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{87BFCB2C-3655-4866-9286-1DB444B4C612}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -142,5 +141,23 @@ Global
 		{27C5BB99-2EB4-49E7-814C-3BC37A2D047C}.Release|x64.Build.0 = Release|Any CPU
 		{27C5BB99-2EB4-49E7-814C-3BC37A2D047C}.Release|x86.ActiveCfg = Release|Any CPU
 		{27C5BB99-2EB4-49E7-814C-3BC37A2D047C}.Release|x86.Build.0 = Release|Any CPU
+		{8C5DDE60-E166-416C-82A9-F704B3A98227}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C5DDE60-E166-416C-82A9-F704B3A98227}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C5DDE60-E166-416C-82A9-F704B3A98227}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8C5DDE60-E166-416C-82A9-F704B3A98227}.Debug|x64.Build.0 = Debug|Any CPU
+		{8C5DDE60-E166-416C-82A9-F704B3A98227}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8C5DDE60-E166-416C-82A9-F704B3A98227}.Debug|x86.Build.0 = Debug|Any CPU
+		{8C5DDE60-E166-416C-82A9-F704B3A98227}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C5DDE60-E166-416C-82A9-F704B3A98227}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C5DDE60-E166-416C-82A9-F704B3A98227}.Release|x64.ActiveCfg = Release|Any CPU
+		{8C5DDE60-E166-416C-82A9-F704B3A98227}.Release|x64.Build.0 = Release|Any CPU
+		{8C5DDE60-E166-416C-82A9-F704B3A98227}.Release|x86.ActiveCfg = Release|Any CPU
+		{8C5DDE60-E166-416C-82A9-F704B3A98227}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B43E1A2E-7A05-41F0-BC77-967067D60A6B}
 	EndGlobalSection
 EndGlobal

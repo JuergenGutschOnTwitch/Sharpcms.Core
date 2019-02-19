@@ -44,9 +44,9 @@ namespace Sharpcms.Providers.Base
 
         private void HandleLog()
         {
-            if (Process.HttpPage.Request.UrlReferrer != null)
+            if (Process.HttpPage.Request.Referrer != null)
             {
-                Process.Content["referrer"].InnerText = Process.HttpPage.Request.UrlReferrer.ToString();
+                Process.Content["referrer"].InnerText = Process.HttpPage.Request.Referrer.ToString();
             }
         }
     }

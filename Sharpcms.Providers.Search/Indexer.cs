@@ -555,10 +555,10 @@ namespace Sharpcms.Providers.Search
         /// </summary>
         /// <param name="html">HTML document</param>
         /// <returns>Plain tesxt.</returns>
-        private static string ParseHtml(string html)
+        private string ParseHtml(string html)
         {
-            html = HttpContext.Current.Server.HtmlDecode(html);
-            html = HttpContext.Current.Server.HtmlDecode(html);
+            html = HttpContextWrapper.Current.Server.HtmlDecode(html);
+            html = HttpContextWrapper.Current.Server.HtmlDecode(html);
             html = Regex.Replace(html, @"<([^>]|\s)*>", " "); //replace all HTML 
 
             return html;
