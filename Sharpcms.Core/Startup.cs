@@ -25,6 +25,9 @@ namespace Sharpcms.Core
             }
 
             app.UseSession();
+            app.UseStaticFiles(new StaticFileOptions {
+                RequestPath = "/Custom/Components"
+            });
 
             app.UseSharpcms();
         }
