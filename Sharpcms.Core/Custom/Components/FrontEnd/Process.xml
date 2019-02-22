@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<process>
+  <admin />
+  <show>
+    <template name="show" />
+    <load provider="Page" place="navigationplace" action="tree" />
+    <load provider="Page" place="contentplace" action="page" />
+    <handle provider="Form" />
+  </show>
+  <sign>
+    <redirect href="login" />
+  </sign>
+</process>

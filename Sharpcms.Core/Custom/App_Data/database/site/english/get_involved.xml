@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<page>
+  <attributes>
+    <pagename>Get involved</pagename>
+    <name>get_involved</name>
+    <menuname>Get involved</menuname>
+    <pageidentifier>english/get_involved</pageidentifier>
+    <status>hide</status>
+    <lastedited></lastedited>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="coworker" />
+      </elements>
+    </container>
+    <container name="test">
+      <elements />
+    </container>
+  </containers>
+</page>

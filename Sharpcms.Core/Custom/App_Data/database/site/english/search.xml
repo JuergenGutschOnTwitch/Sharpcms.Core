@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<page>
+  <attributes>
+    <pagename>Search</pagename>
+    <name>search</name>
+    <menuname>Search</menuname>
+    <pageidentifier>english/search</pageidentifier>
+    <status>open</status>
+    <template></template>
+    <lastedited></lastedited>
+    <metakeywords></metakeywords>
+    <metadescription></metadescription>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="search" publish="true" name="" />
+      </elements>
+    </container>
+  </containers>
+</page>

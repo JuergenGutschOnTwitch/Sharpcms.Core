@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<page>
+  <attributes>
+    <pagename>Fragen und Antworten</pagename>
+    <name>faq</name>
+    <menuname>FAQ</menuname>
+    <pageidentifier>german/support/faq</pageidentifier>
+    <status>open</status>
+    <lastedited></lastedited>
+    <metakeywords></metakeywords>
+    <metadescription></metadescription>
+    <template></template>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header" publish="true" name="">
+          <text>Fragen und Antworten</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>none</offset>
+        </element>
+        <element type="faqhead" publish="true" name="">
+          <header>Header</header>
+          <text>&lt;p&gt;Um Ihre wichtigste Fragen zu beantworten haben wir hier mal de Wichtigsten Fragen und Antworten gesammelt.&lt;/p&gt;
+&lt;p&gt;Danke an matro der das FAQ Template in der &lt;a href="http://groups.google.com/group/SharpCms" target="_blank"&gt;Google Group&lt;/a&gt; gepostet hat.&lt;br /&gt;&lt;a href="http://groups.google.com/group/SharpCms/browse_thread/thread/5efabc0f48f1a1fb" target="_blank"&gt;Zum Google Group Thread&lt;/a&gt;&lt;/p&gt;</text>
+        </element>
+        <element type="faq" publish="true" name="">
+          <question>Wird für das sharpcms eine Datenbank benötigt?</question>
+          <answer>&lt;p&gt;Nein, &lt;strong&gt;sharpcms&lt;/strong&gt; ben&amp;ouml;tigt keine Datenbank, da alle Daten im Dateiensystem im XML Format gespeichert werden.&lt;/p&gt;</answer>
+        </element>
+        <element type="faq" publish="true" name="">
+          <question>Wie suchmaschinenfreundlich ist sharpcms?</question>
+          <answer>&lt;p&gt;Dadurch das &lt;strong&gt;sharpcms&lt;/strong&gt; sprechende Links erzeugt und sich der Content strukturiert darstellen l&amp;auml;sst, k&amp;ouml;nnen alle Inhalte von &lt;strong&gt;sharpcms&lt;/strong&gt; gut indiziert werden.&lt;/p&gt;</answer>
+        </element>
+        <element type="faq" publish="true" name="">
+          <question>Kann mit sharpcms eine barrierearme Website erzeugt werden?</question>
+          <answer>&lt;p&gt;Ja. Im Prinzip haben Sie freie Wahl. Sie k&amp;ouml;nnen jeden beliebigen HTML Output mit &lt;strong&gt;sharpcms&lt;/strong&gt; erzeugen, da die Ausgabe komplett mit XSL Templates erzeugt wird&lt;/p&gt;</answer>
+        </element>
+      </elements>
+    </container>
+    <container name="news">
+      <elements></elements>
+    </container>
+  </containers>
+</page>

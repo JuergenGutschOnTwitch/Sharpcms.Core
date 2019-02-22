@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<page>
+  <attributes>
+    <pagename>Support</pagename>
+    <name>support</name>
+    <menuname>Support</menuname>
+    <pageidentifier>german/support</pageidentifier>
+    <status>open</status>
+    <lastedited></lastedited>
+    <metakeywords>suport, sharpcms, XML XSL, ASP.NET, C#</metakeywords>
+    <metadescription>support für sharpcms</metadescription>
+    <template></template>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header" publish="true" name="">
+          <text>Support und Einführung</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>none</offset>
+        </element>
+        <element type="paragraph" publish="true" name="">
+          <header></header>
+          <headerstyle>Header1</headerstyle>
+          <text>&lt;p&gt;Hier k&amp;ouml;nnen Sie sich die Dokumentation ansehen um mehr &amp;uuml;ber sharpcms und die Benutzung von sharpcms zu erfahren:&lt;br /&gt;&lt;a href="http://docs.sharpcms.org/"&gt;http://docs.sharpcms.org/&lt;/a&gt;. &lt;br /&gt;Die Dokumentation ist im Moment noch nicht ferteggestellt. Wenn Sie m&amp;ouml;chten, d&amp;uuml;rfen sie sich gerne registrieren und an der Dokumentation mitarbeiten.&lt;/p&gt;
+&lt;p&gt;Wenn Sie fragen zu sharpcms und siene die Benutzung von sharpcms haben, benutzen Sie bitte das Diskussions Forum auf Codeplex:&lt;br /&gt;&lt;a href="http://www.codeplex.com/sharpcms/Thread/List.aspx"&gt;http://www.codeplex.com/sharpcms/Thread/List.aspx&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Die alte englischsprachige Google Gruppe bleibt als archiv weiterhin offen&lt;br /&gt;&lt;a href="http://groups.google.com/groups/sharpcms"&gt;http://groups.google.com/groups/sharpcms&lt;/a&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;Ein erstes Video Tutorial ist bereits online:&lt;br /&gt;&lt;a href="video/demo.html"&gt;http://www.sharpcms.org/video/demo.html&lt;/a&gt;&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+      </elements>
+    </container>
+    <container name="news">
+      <elements></elements>
+    </container>
+  </containers>
+</page>

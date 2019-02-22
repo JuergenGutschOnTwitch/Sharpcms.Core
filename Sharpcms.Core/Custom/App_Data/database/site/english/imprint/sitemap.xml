@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<page>
+  <attributes>
+    <pagename>Sitemap</pagename>
+    <name>sitemap</name>
+    <menuname>Sitemap</menuname>
+    <pageidentifier>english/imprint/sitemap</pageidentifier>
+    <status>open</status>
+    <template></template>
+    <lastedited></lastedited>
+    <metakeywords>sharpcms, websites, sitemap</metakeywords>
+    <metadescription>Site overview on sharpcms.org</metadescription>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header" publish="true" name="">
+          <text>Sitemap</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>1 line</offset>
+        </element>
+        <element type="sitemap" publish="true" name="" />
+      </elements>
+    </container>
+  </containers>
+</page>

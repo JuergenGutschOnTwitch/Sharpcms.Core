@@ -48,19 +48,19 @@ namespace Sharpcms.Base.Library.Process
             _basePath = GetBasePath(httpPage);
             Content["basepath"].InnerText = _basePath;
 
-            var referrer = httpPage.Server.UrlEncode(httpPage.Request.ServerVariables["HTTP_REFERER"]);
+            var referrer = httpPage.Server.UrlEncode(httpPage.Request.Referrer?.ToString());
             Content["referrer"].InnerText = referrer ?? String.Empty;
 
-            var domain = httpPage.Server.UrlEncode(httpPage.Request.ServerVariables["SERVER_NAME"]);
+            var domain = httpPage.Server.UrlEncode(httpPage.Request.ServerName);
             Content["domain"].InnerText = domain ?? String.Empty;
 
-            var useragent = httpPage.Server.UrlEncode(httpPage.Request.ServerVariables["HTTP_USER_AGENT"]);
+            var useragent = httpPage.Server.UrlEncode(httpPage.Request.UserAgent);
             Content["useragent"].InnerText = useragent ?? String.Empty;
 
             var sessionid = httpPage.Server.UrlEncode(httpPage.Session.Id.ToString(CultureInfo.InvariantCulture));
             Content["sessionid"].InnerText = sessionid ?? String.Empty;
 
-            var ip = httpPage.Server.UrlEncode(httpPage.Request.ServerVariables["REMOTE_ADDR"]);
+            var ip = httpPage.Server.UrlEncode(httpPage.Request.RemoteAddress.ToString());
             Content["ip"].InnerText = ip ?? String.Empty;
 
             Attributes = new XmlItemList(CommonXml.GetNode(xmlNode, "attributes", EmptyNodeHandling.CreateNew));
@@ -155,21 +155,21 @@ namespace Sharpcms.Base.Library.Process
 
             if (httpPage.Request.ApplicationPath != null)
             {
-                var serverProtocol = httpPage.Request.ServerVariables["SERVER_PROTOCOL"].Split('/')[0].ToLower();
-                var serverName = httpPage.Request.ServerVariables["SERVER_NAME"];
-                var serverPort = httpPage.Request.ServerVariables["SERVER_PORT"];
+                var serverProtocol = httpPage.Request.ServerProtocol.Split('/')[0].ToLower();
+                var serverName = httpPage.Request.ServerName;
+                var serverPort = httpPage.Request.ServerPort;
                 var applicationPath = httpPage.Request.ApplicationPath.TrimEnd('/');
 
-                basePath = String.Format("{0}://{1}", serverProtocol, serverName);
+                basePath = $"{serverProtocol}://{serverName}";
 
-                if (!String.IsNullOrEmpty(serverPort) && serverPort != "80")
+                if (serverPort.HasValue && serverPort != 80)
                 {
-                    basePath += String.Format(":{0}", serverPort);
+                    basePath += $":{serverPort.Value}";
                 }
 
                 var baseUri = new Uri(basePath);
                 var applicationBaseUri = new Uri(baseUri, applicationPath);
-
+                
                 basePath = applicationBaseUri.AbsoluteUri;
             }
 
@@ -180,7 +180,7 @@ namespace Sharpcms.Base.Library.Process
         {
             get
             {
-                var debugEnabled = (HttpPage.Session["enabledebug"] != null && HttpPage.Session["enabledebug"].ToString() == "true");
+                var debugEnabled = (HttpPage.Session.ContainsKey("enabledebug") && HttpPage.Session["enabledebug"].ToString() == "true");
 
                 return debugEnabled;
             }
@@ -255,12 +255,12 @@ namespace Sharpcms.Base.Library.Process
         {
             get
             {
-                if (HttpPage.Session["current_username"] == null)
+                if (!HttpPage.Session.ContainsKey("current_username"))
                 {
                     Logout();
                 }
 
-                return HttpPage.Session["current_username"] != null
+                return HttpPage.Session.ContainsKey("current_username")
                     ? HttpPage.Session["current_username"].ToString()
                     : String.Empty;
             }
@@ -339,7 +339,7 @@ namespace Sharpcms.Base.Library.Process
 
         private void ConfigureDebugging()
         {
-            if (HttpPage.Request.ServerVariables["REMOTE_ADDR"] != "127.0.0.1")
+            if (HttpPage.Request.RemoteAddress.ToString() != "127.0.0.1")
             {
                 return;
             }
@@ -409,7 +409,7 @@ namespace Sharpcms.Base.Library.Process
 
         private IEnumerable<String> History()
         {
-            var history = HttpPage.Session["history"] != null
+            var history = HttpPage.Session.ContainsKey("history")
                 ? (List<String>)HttpPage.Session["history"]
                 : new List<String>();
 
@@ -423,7 +423,7 @@ namespace Sharpcms.Base.Library.Process
         {
             Dictionary<String, int> pageViewCounts;
 
-            if (HttpPage.Session["pageviews"] != null)
+            if (HttpPage.Session.ContainsKey("pageviews"))
             {
                 pageViewCounts = (Dictionary<String, int>)HttpPage.Session["pageviews"];
 

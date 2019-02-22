@@ -49,7 +49,7 @@ namespace Sharpcms
                 if (!File.Exists(file))
                 {
                     var process = currentUrl.Substring(applicationPath.Length).TrimStart('/').Replace(".aspx", String.Empty);
-                    var querystring = httpRequest.ServerVariables["QUERY_STRING"];
+                    var querystring = httpRequest.QueryString;
                     var rewritePath = !String.IsNullOrEmpty(querystring)
                         ? String.Format("~/{0}.aspx?process={1}&{2}", entryPageName, process, querystring)
                         : String.Format("~/{0}.aspx?process={1}", entryPageName, process);

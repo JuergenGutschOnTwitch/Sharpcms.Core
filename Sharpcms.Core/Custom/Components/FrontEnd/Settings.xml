@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<settings>
+  <templates>
+    <show>~/Custom/Components/FrontEnd/Xsl/Show.xslt</show>
+  </templates>
+  <mail>
+    <smtp>mail.contoso.org</smtp>
+    <smtpuser>info@contoso.org</smtpuser>
+    <smtppass>topsecret</smtppass>
+    <user>info@contoso.org</user>
+    <subject>Email von www.contoso.org Kontaktformular</subject>
+    <servermail>info@contoso.org</servermail>
+  </mail>
+  <sitetree>
+    <containers>
+      <item>content</item>
+    </containers>
+    <stdpage>english/about</stdpage>
+    <elementlist>
+      <paragraph>
+        <item name="Text" attribute="text" type="tinymce" height="300" />
+        <item name="Link" attribute="link" type="choosepage" />
+        <item name="Picture" attribute="picture" type="choosefile" />
+        <item name="Picture pos." attribute="picturepos" type="list">
+          <item>Left</item>
+          <item>Right</item>
+        </item>
+      </paragraph>
+      <header>
+        <item name="Text" attribute="text" type="text" />
+        <item name="Header type" attribute="headerstyle" type="list">
+          <item>Header1</item>
+          <item>Header2</item>
+          <item>Header3</item>
+        </item>
+        <item name="Offset" attribute="offset" type="list">
+          <item>none</item>
+          <item>1 line</item>
+          <item>2 lines</item>
+        </item>
+      </header>
+      <picture>
+        <item name="Picture" attribute="picture" type="choosefile" />
+        <item name="Alttext" attribute="alttext" type="text" />
+        <item name="Text" attribute="text" type="text" />
+      </picture>
+      <iframe>
+        <item name="Url" attribute="url" type="text" />
+        <item name="Height" attribute="height" type="text" />
+        <item name="Width" attribute="width" type="text" />
+        <item name="Border" attribute="border" type="text" />
+      </iframe>
+      <block>
+        <item name="Titel" attribute="title" type="text" />
+        <item name="Text" attribute="text" type="tinymce" height="150" />
+        <item name="Link" attribute="link" type="text" />
+        <item name="Picture" attribute="picture" type="choosefile" />
+        <item name="Picture pos." attribute="picturepos" type="list">
+          <item>Right</item>
+          <item>Left</item>
+        </item>
+      </block>
+      <code>
+        <item name="Text" attribute="text" type="textarea" />
+      </code>
+      <form>
+        <item name="Subject" attribute="subject" type="text" />
+        <item name="Category List" attribute="category-list" type="textarea" />
+        <item name="Element List" attribute="element-list" type="textarea" />
+      </form>
+      <freetext>
+        <item name="Text" attribute="text" type="textarea" />
+      </freetext>
+      <rssfeed>
+        <item name="RssFeed" attribute="url" type="text" />
+      </rssfeed>
+      <sitemap></sitemap>
+      <overview></overview>
+      <faqhead>
+        <item name="Text" attribute="text" type="tinymce" height="150" />
+      </faqhead>
+      <faq>
+        <item name="Question" attribute="question" type="text" />
+        <item name="Answer" attribute="answer" type="tinymce" height="150" />
+      </faq>
+    </elementlist>
+  </sitetree>
+  <general>
+    <stdprocess>show</stdprocess>
+    <cookies>,style,</cookies>
+  </general>
+</settings>

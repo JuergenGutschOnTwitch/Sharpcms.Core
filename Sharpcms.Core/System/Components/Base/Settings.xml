@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<settings>
+  <general>
+    <customrootcomponents>~/Custom/Components</customrootcomponents>
+    <systemrootcomponents>~/System/Components</systemrootcomponents>
+    <sitedataroot>~/Custom/App_Data</sitedataroot>
+  </general>
+  <common>
+    <cleanChars>
+      <anywhere>abcdefghijklomnopqrstuvwqxyz_</anywhere>
+      <notInBeginning>1234567890-.</notInBeginning>
+    </cleanChars>
+    <mimetypes>
+      <defaulttype>application/octet-stream</defaulttype>
+      <bmp>image/bmp</bmp>
+      <doc>application/msword</doc>
+      <gif>image/gif</gif>
+      <html>text/html</html>
+      <htm>text/html</htm>
+      <jpg>image/jpeg</jpg>
+      <jpeg>image/jpeg</jpeg>
+      <jpe>image/jpeg</jpe>
+      <pdf>application/pdf</pdf>
+      <png>image/png</png>
+      <rtf>application/rtf</rtf>
+      <tiff>image/tiff</tiff>
+      <tif>image/tiff</tif>
+      <txt>text/plain</txt>
+      <xml>text/xml</xml>
+      <xsl>text/xml</xsl>
+      <xslt>text/xml</xslt>
+      <xhtml>application/xhtml+xml</xhtml>
+      <zip>application/zip</zip>
+      <m4a>audio/x-m4a</m4a>
+      <m4b>audio/x-m4b</m4b>
+      <m4v>video/x-m4v</m4v>
+      <mp4>video/mp4</mp4>
+    </mimetypes>
+  </common>
+  <site>
+    <stacktrace>
+      <subject>{domain}: {type} thrown</subject>
+      <body>
+        An exception of type {type} was thrown.
+
+        URL: {url}
+
+        Process: {process}
+        User: {user}
+
+        Message:
+        {message}
+
+        Stack trace:
+        {stacktrace}
+
+        Parameters:
+        {params}
+      </body>
+    </stacktrace>
+  </site>
+</settings>

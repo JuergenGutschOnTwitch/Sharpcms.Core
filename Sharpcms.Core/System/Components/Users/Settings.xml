@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<settings>
+  <templates>
+    <login>~/System/Components/Users/Xsl/Login.xslt</login>
+  </templates>
+  <users>
+    <filename>~/Custom/App_Data/Users.xml</filename>
+  </users>
+  <admin>
+    <menu>
+      <left>
+        <item path="admin/user" weight="30">Users</item>
+      </left>
+    </menu>
+  </admin>
+  <groups>
+    <defaultfrontpage>show</defaultfrontpage>
+  </groups>
+</settings>

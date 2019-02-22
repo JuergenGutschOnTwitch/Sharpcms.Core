@@ -1,0 +1,184 @@
+@charset "utf-8";
+/**
+ * "Yet Another Multicolumn Layout" - (X)HTML/CSS Framework
+ *
+ * (en) Template for designing a screen layout
+ * (de) Gestaltungsvorlage für die Erstellung eines Screenlayouts
+ *
+ * @copyright       Copyright 2005-2007, Dirk Jesse
+ * @license         CC-A 2.0 (http://creativecommons.org/licenses/by/2.0/),
+ *                  YAML-C (http://www.yaml.de/en/license/license-conditions.html)
+ * @link            http://www.yaml.de
+ * @package         yaml
+ * @version         3.0.3
+ * @revision        $Revision: 118 $
+ * @lastmodified    $Date: 2007-08-18 16:03:42 +0200 (Sa, 18 Aug 2007) $
+ */
+@media all
+{
+    /*------------------------------------------------------------------------------------------------------*/
+
+    /**
+    			* Design of the Basic Layout | Gestaltung des YAML Basis-Layouts
+    			*
+    			* @section layout-basics
+    			*/
+    * {
+        
+    }
+
+    /* Page margins and background | Randbereiche & Seitenhintergrund */
+    body {
+        padding: 0;
+        margin: 0;
+        background-color: #eee;
+        background-image: url(../img/bg.gif);
+        background-repeat: repeat-x;
+    }
+    
+    /* Layout: Width, Background, Border | Layout: Breite, Hintergrund, Rahmen */
+    #page_margins {
+        width: 68.2em;
+        margin: 20px auto 0 auto;
+    }
+    
+    #page {
+        background-color: #fff;
+    }
+    
+    #header {
+    }
+    
+    #header #head1 {
+        border-top: solid 1px #999;
+        border-left: solid 1px #999;
+        border-right: solid 1px #999;
+    }
+    
+    #header #head1 #logo {
+        float: left;
+    }
+    
+    #header #head1 #topmenu {
+        float: right;
+    }
+    
+    #header #head2 {
+        height: 1.7em;
+        background-color: #7697AB;
+    }
+
+    #header #head3 {
+        border-left: solid 1px #999;
+        border-right: solid 1px #999;
+        height: 9.15em;
+        background-image: url(../img/banner.gif);
+        position: relative;
+    }
+    
+    #header #head3 .teaser {
+        position: absolute;
+        left: 1em;
+        bottom: 0em;
+        color: #999;
+        width: 35em;
+        font-size:smaller;
+    }
+
+    #menu {
+        height: 2.5em;
+        background-color: #7697ab;
+    }
+    
+    #navsubline {
+        background-repeat: no-repeat;
+        height: 15px;
+    }
+    
+    #main {
+        border-left: solid 1px #999;
+        border-right: solid 1px #999;
+    }
+
+    #col1 {
+        display: none;
+    }
+    
+    #col1_content {
+        
+    }
+    
+    #col2 {
+        width: 18em;
+        min-height: 300px;
+    }
+    
+    #col2_content {
+        margin: 1em;
+    }
+
+    #col3 {
+        margin: 0 18em 0 0;
+        min-height: 300px;
+        padding: 1em;
+        border-right: solid 1px #999;
+    }
+    
+    #col3_content {
+        
+    }
+
+    #footer {
+        border-left: solid 1px #999;
+        border-right: solid 1px #999;
+        border-bottom: solid 1px #999;
+    }
+    
+    #footer #fo1 {
+        display: block;
+        margin-right: 18em; 
+        border-right: solid 1px #999;    
+        padding: 1em;   
+    }
+    
+    #footer #fo2 {
+        display: block;
+        float: right;
+        width: 16em;
+        padding: 1em;
+    }
+
+    .clear {
+        clear: both;
+    }
+    
+    .hide {
+        position: absolute;
+        top: -100px;
+        left: -100px;
+        display: none;
+    }
+
+    form input.but {
+        margin-top: 0.5em;
+        color: #333;
+        font-weight: bold;
+        border: 1px solid #999;
+        padding: 0.1em 0.2em 0.1em 0.2em;
+    }
+    
+    form input.search {
+        margin-top: 0.5em;
+        border: 1px solid #999;
+        background-color: #fff;
+        font-family: verdana, arial, sans-serif;
+        padding: 0.2em;
+        width: 15em;
+    }
+
+    hr {
+        height: 0;
+        border-width: 0;
+        border-top: 2px solid #686868;
+    }
+}

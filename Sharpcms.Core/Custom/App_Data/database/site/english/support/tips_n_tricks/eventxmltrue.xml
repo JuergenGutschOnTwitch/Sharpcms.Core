@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<page>
+  <attributes>
+    <pagename>No more fiddling with URLs</pagename>
+    <name>eventxmltrue</name>
+    <menuname>No more fiddling with URLs</menuname>
+    <pageidentifier>english/support/tips_n_tricks/eventxmltrue</pageidentifier>
+    <status>open</status>
+    <template></template>
+    <lastedited></lastedited>
+    <metakeywords>event_xml, XML, pagestructure</metakeywords>
+    <metadescription>event_xml=true to show the XML of the page</metadescription>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header" publish="true" name="">
+          <text>No more fiddling with URLs</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>1 line</offset>
+        </element>
+        <element type="paragraph" publish="true" name="">
+          <text>&lt;p&gt;Instead of adding &amp;amp;event_xml=true or ?event_xml=true to your URLs all the time, download &lt;a href="/?process=download/files/downloads/view_xml.zip&amp;amp;download=true" target="_blank"&gt;this shortcut&lt;/a&gt; and add it to your toolbar in Internet Explorer.&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

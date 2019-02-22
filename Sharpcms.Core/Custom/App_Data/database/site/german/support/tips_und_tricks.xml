@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<page>
+  <attributes>
+    <pagename>Tips und Tricks</pagename>
+    <name>tips_und_tricks</name>
+    <menuname>Tips und Tricks</menuname>
+    <pageidentifier>german/support/tips_und_tricks</pageidentifier>
+    <status>open</status>
+    <lastedited></lastedited>
+    <metakeywords>tips, tricks, asp.net, c#, xml, xslt</metakeywords>
+    <metadescription>tips und tricks zu zu sharpcms</metadescription>
+    <template></template>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header" publish="true" name="">
+          <text>Tips und Tricks</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>1 line</offset>
+        </element>
+        <element type="overview" publish="true" name="">
+          <text>Übersicht</text>
+        </element>
+      </elements>
+    </container>
+    <container name="news">
+      <elements></elements>
+    </container>
+  </containers>
+</page>

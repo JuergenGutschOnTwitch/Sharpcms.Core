@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<page>
+  <attributes>
+    <pagename>Features</pagename>
+    <name>features</name>
+    <menuname>Features</menuname>
+    <pageidentifier>german/about/features</pageidentifier>
+    <status>open</status>
+    <lastedited>25.09.2007</lastedited>
+    <metakeywords>sharpcms, content management, content management system, cms, xml, xslt</metakeywords>
+    <metadescription>die Features des sharpcms</metadescription>
+    <template></template>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header" publish="true" name="">
+          <text>Features</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>1 line</offset>
+        </element>
+        <element type="paragraph" publish="true" name="">
+          <text>&lt;p&gt;Folgendes liefert das sharpcms:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Trennung zwischen dem Kernsystem und der spezifischen Web Site&lt;/li&gt;
+&lt;li&gt;Benutzer und - Gruppenverwaltung&lt;/li&gt;
+&lt;li&gt;Bilder- und Dokumentenverwaltung, mit Bilder Editor&lt;/li&gt;
+&lt;li&gt;Keine Layoutbeschr&amp;auml;nkungen (Individuelle Gestaltung per XSL Templates)&lt;/li&gt;
+&lt;li&gt;Mehrere Templates m&amp;ouml;glich (XSL Templates)&lt;/li&gt;
+&lt;li&gt;Sprechende URLs (keine kryptischen IDs und Zahlen)&lt;/li&gt;
+&lt;li&gt;Keine Datenbank n&amp;ouml;tig (Datenhaltung in XML Dateien)&lt;/li&gt;
+&lt;li&gt;Schnelle Ladezeit&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Dadurch das die Ausgabe des sharpcms absolut frei ist k&amp;ouml;nnen folgende Punkte umgesetzt werden:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Suchmaschienenfreundlich Struktur&lt;/li&gt;
+&lt;li&gt;Barrierefreie Ausgabe ist m&amp;ouml;glich&lt;/li&gt;
+&lt;li&gt;Ausgabe von XHTML 1.0 ist m&amp;ouml;glich&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Selbst die Content Container k&amp;ouml;nnen in sharpcms frei definiert und gestaltet werden, dadurch&amp;nbsp;k&amp;ouml;nnen folgende Funktionen auf den Seiten dargestellt werden&amp;nbsp;:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Text (schreiben mit einem WYSIWYG Editor)&lt;/li&gt;
+&lt;li&gt;Bilder Galerie&amp;nbsp; (Individuelle Gestaltung per XSL Templates)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;NEU!&lt;/strong&gt; Volltextsuche&lt;/li&gt;
+&lt;li&gt;Dynamische E-Mailformulare&lt;/li&gt;
+&lt;li&gt;FAQ System&lt;/li&gt;
+&lt;li&gt;G&amp;auml;stebuch&lt;/li&gt;
+&lt;li&gt;Seitenkommentare (evtl. zur Artikelbewertung durch user)&lt;/li&gt;
+&lt;li&gt;Anzeige von RSS Feeds&lt;/li&gt;
+&lt;li&gt;(Weitere Contenttemplates sind frei erstellbar)&lt;/li&gt;
+&lt;/ol&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

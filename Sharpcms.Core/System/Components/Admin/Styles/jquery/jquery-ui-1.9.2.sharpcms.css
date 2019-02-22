@@ -1,0 +1,127 @@
+/* jQuery Ui Tabs */
+.tab-pane .ui-widget-content {
+    border: none;
+}
+
+.ui-tabs {
+    padding: 0;
+}
+
+    .ui-tabs .ui-widget-header {
+        border: none;
+    }
+
+    .ui-tabs .ui-tabs-nav {
+        background: #f4f6f7;
+        padding: 0;
+    }
+
+        .ui-tabs .ui-tabs-nav li {
+            background: #e7ecee;
+            border: 1px solid #d0d9df;
+            cursor: Default;
+            display: inline;
+            margin: 1px -2px 1px 2px;
+            top: 1px;
+        }
+
+            .ui-tabs .ui-tabs-nav li a {
+                cursor: pointer;
+                color: #748fa0;
+                font-weight: bold;
+                padding: 2px 5px 3px 5px;
+                text-transform: capitalize;
+            }
+
+            .ui-tabs .ui-tabs-nav li.ui-tabs-active {
+                border-bottom: 0;
+                margin: 1px -2px -1px 0;
+                top: -1px;
+            }
+
+                .ui-tabs .ui-tabs-nav li.ui-tabs-active a {
+                    color: #486c82;
+                }
+
+                .ui-tabs .ui-tabs-nav li.ui-tabs-active a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a {
+                    cursor: default;
+                    padding: 4px 8px 3px 8px;
+                }
+
+    .ui-tabs .ui-tabs-panel {
+        background: #e7ecee;
+        border: 1px solid #d0d9df;
+        margin-top: -1px;
+        padding: 8px;
+    }
+
+
+/* jQuery Ui Selectmenu */
+.ui-selectmenu {
+    height: 23px;
+}
+
+label, select, .ui-select-menu {
+    float: left;
+    margin-right: 10px;
+}
+
+.wrap span.ui-selectmenu-item-header,
+.wrap ul.ui-selectmenu-menu li a {
+    text-decoration: underline !important;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+    border: 1px solid #b9c7cf;
+    background: #d0d9df none;
+    color: #555;
+}
+
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-default {
+    border: 1px solid #748fa0;
+    background: #a2b4bf none;
+    color: #555;
+}
+
+/* jQuery Ui Dialog */
+.ui-dialog-title {
+    font-weight: bold;
+}
+
+/*************************************************************************/
+/*                                                                    Tabs
+/*************************************************************************/
+.tab-pane {
+    float: left;
+    margin-top: 6px;
+    margin-bottom: 5px;
+    width: 650px;
+}
+
+.tab-page {
+    float: left;
+    width: 632px;
+}
+
+ul.ui-tabs-nav li a.delete {
+    background-color: #d0d9df;
+    border: 1px solid #b9c7cf !Important;
+    cursor: pointer !Important;
+    display: none;
+    font-weight: bold;
+    margin: 2px 2px 0 0;
+    padding: 1px 3px !Important;
+}
+
+ul.ui-tabs-nav li a.delete:hover {
+    background-color: #a2b4bf;
+    border: 1px solid #748fa0 !Important;
+}
+
+ul.ui-tabs-nav li.ui-tabs-active a.delete {
+    display: inherit;
+}

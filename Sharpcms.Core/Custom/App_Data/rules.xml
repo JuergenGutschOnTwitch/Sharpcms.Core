@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<rules>
+	<!-- include a 'doctype' element for each document type the indexer will accept -->
+
+	<doctype root="page" namespace="">
+
+		<!-- rules in this section are 'global'. they will be stored, with
+		     the same value, for every indexed chunk (lucene document) in
+		     the file
+		     
+		     the field attribute gives the name of the field, the type can
+		     either be keyword (stored untokenized) or text (tokenized). 
+		     the xpath is used to determine the value of the field.
+		     
+		     rule is: if you want to do free text searching over something,
+		     make it 'text'. -->
+
+		<rule field="uristub" type="keyword" xpath="/page/attributes/pageidentifier/@value" />
+
+		<!-- 'document' elements identify Lucene documents within the XML
+	         document.  This may be a 1:1 with XML documents, or there may
+	         be multiple Lucene documents inside one XML file, e.g. the <item>
+	         elements in an RSS file.
+	         
+	         the xpath specifies the root of each document, and the key an
+	         xpath expression giving a unique value for this document.  this is
+	         needed so reindexing/updates work.  if key is not defined, then
+	         the filename of the XML file will be used: obviously if there's
+	         more than one Lucene Document per XML file then you're going to
+	         have problems there. -->
+    <!--<document xpath="/page/link" key="concat(/churn/relative-uri-stub/@value, concat('#', time/@value))">-->
+
+		<document xpath="/page" key="/page/attributes/pageidentifier">
+
+			<!-- every rule here defines a field for the document -->
+
+			<rule field="title" type="text" xpath="attributes/pagename" />
+			<rule field="text" type="text" xpath="containers/container/elements/element/header" />
+			<rule field="text" type="text" xpath="containers/container/elements/element/text" />
+			<rule field="text" type="text" xpath="containers/container/elements/element/question" />
+			<rule field="text" type="text" xpath="containers/container/elements/element/answer" />
+			<rule field="url" type="keyword" xpath="attributes/pageidentifier" />
+			<!--<rule field="nick" type="keyword" xpath="nick" />
+			<rule field="keywords" type="text" xpath="keywords" />
+			<rule field="time" type="keyword" xpath="time" />
+			<rule field="unixtime" type="keyword" xpath="time/@value" />-->
+		</document>
+	</doctype>
+	<!--<doctype root="post" namespace="">
+		<rule field="uristub" type="keyword" xpath="/post/attributes/postidentifier/@value" />
+		<document xpath="/post" key="attributes/postidentifier">-->
+  
+  <!-- every rule here defines a field for the document -->
+  
+  <!--<rule field="title" type="text" xpath="containers/container/elements/element/header" />
+			<rule field="text" type="text" xpath="containers/container/elements/element/text" />
+			<rule field="text" type="text" xpath="containers/container/elements/element/question" />
+			<rule field="text" type="text" xpath="containers/container/elements/element/answer" />
+			<rule field="url" type="keyword" xpath="attributes/postidentifier" />
+		</document>
+	</doctype>-->
+</rules>

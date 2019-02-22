@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<page>
+  <attributes>
+    <pagename>Download</pagename>
+    <name>download</name>
+    <menuname>Download</menuname>
+    <pageidentifier>english/download</pageidentifier>
+    <status>open</status>
+    <lastedited></lastedited>
+    <metakeywords>sharpcms, codeplex, download, asp.net, xml, xsl, c#</metakeywords>
+    <metadescription>download sharpcms from codeplex</metadescription>
+    <template></template>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header" publish="true" name="">
+          <text>Download</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>1 line</offset>
+        </element>
+        <element type="paragraph" publish="true" name="">
+          <text>&lt;h2&gt;Using the binary version of sharpcms.&lt;/h2&gt;
+&lt;p&gt;The binary version is all you need to begin building your own website. We recommend you open it with &lt;a href="http://msdn.microsoft.com/vstudio/express/vwd/"&gt;Visual Studio Web Developer Express&lt;/a&gt;. Since all the data rely on XML there is no need to setup any databases. Open the website in Visual Studio and click run. That should do the trick.&lt;/p&gt;
+&lt;h2&gt;Download:&amp;nbsp;&lt;/h2&gt;
+&lt;p&gt;You will find the current downloads at this URL:&lt;br /&gt;&lt;a href="http://www.codeplex.com/sharpcms/Release/ProjectReleases.aspx"&gt;http://www.codeplex.com/sharpcms/Release/ProjectReleases.aspx&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Tip: Start with browsing around in the costum folder. That's where the frontend lies in the&amp;nbsp;form of xsl and css documents.&lt;/p&gt;
+&lt;h2&gt;Using the full source.&lt;/h2&gt;
+&lt;p&gt;This is only necessary if you want to play around with core of the system or get a better understanding of how the system works. If you intend to write your own plug-ins this is also the place to start. We would like to provide some more tutorials later on.&lt;/p&gt;
+&lt;p&gt;You will find the current Sources at this URL:&lt;br /&gt;&lt;a href="http://www.codeplex.com/sharpcms/SourceControl/ListDownloadableCommits.aspx"&gt;http://www.codeplex.com/sharpcms/SourceControl/ListDownloadableCommits.aspx&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Important: &lt;/strong&gt;The binary version has repository handling in the System folder which is the only folder that you need to update. The frontend and your data are in the Custom folder.&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

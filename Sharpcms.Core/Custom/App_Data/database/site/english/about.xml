@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<page>
+  <attributes>
+    <pagename>The open source content management system sharpcms</pagename>
+    <name>about</name>
+    <menuname>About</menuname>
+    <pageidentifier>english/about</pageidentifier>
+    <status>open</status>
+    <lastedited></lastedited>
+    <metakeywords>content, management, system, sharpcms, cms, open source, webdevelopment, website</metakeywords>
+    <metadescription>sharpcms is a open source content management system, based on XML and XSLT, written in C#</metadescription>
+    <template></template>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header" publish="true" name="">
+          <text>Open source content management: sharpcms</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>1 line</offset>
+        </element>
+        <element type="paragraph" publish="true" name="">
+          <text>&lt;h2&gt;News&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="show/english/about/news/"&gt;16/9/2008 - News about sharpcms&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="show/english/about/news/"&gt;8/26/2008 - Important news about sharpcms&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+        <element type="paragraph" publish="true" name="">
+          <text>&lt;h2&gt;Open Source Content Management System&amp;nbsp;&lt;/h2&gt;
+&lt;p&gt;This website hosts the open sourcecontent management "sharpcms". It is a CMS developed with the intent to accommodate the following goals:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Highly flexible content management.&lt;/li&gt;
+&lt;li&gt;Separation between normal usage and development.&lt;/li&gt;
+&lt;li&gt;Easy for developers to install and use it.&lt;/li&gt;
+&lt;li&gt;Truly free layout&lt;/li&gt;
+&lt;li&gt;Intended for small and medium sized companies&lt;/li&gt;
+&lt;li&gt;Based on .Net, XML, XLS, C#&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;So far the system is in beta which in our terms means "It is usable/stable but still bleeding edge". The whole system lies in a subversion repository and we really recommend you use it.&lt;/p&gt;
+&lt;p&gt;We are still working on the documentation. So please join our discussion on codeplex and get all the latest news and&amp;nbsp;support on the system.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.codeplex.com/sharpcms/Thread/List.aspx"&gt;http://www.codeplex.com/sharpcms/Thread/List.aspx&lt;/a&gt;&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

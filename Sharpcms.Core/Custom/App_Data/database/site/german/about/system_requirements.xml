@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<page>
+  <attributes>
+    <pagename>Systemvoraussetzungen</pagename>
+    <name>system_requirements</name>
+    <menuname>Systemvoraussetzungen</menuname>
+    <pageidentifier>german/about/system_requirements</pageidentifier>
+    <status>open</status>
+    <lastedited>05.01.2008</lastedited>
+    <metakeywords>sharpcms, content management, content management system, cms, xml, xslt, system</metakeywords>
+    <metadescription>die Systemvoraussetzungen des sharpcms</metadescription>
+    <template></template>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header" publish="true" name="">
+          <text>Systemvoraussetzungen</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>1 line</offset>
+        </element>
+        <element type="paragraph" publish="true" name="">
+          <text>&lt;p&gt;Da sharpcms keine Datenbank ben&amp;ouml;tigt, sind die Systemvoraussetzungen sehr gering:&lt;/p&gt;
+&lt;h2&gt;F&amp;uuml;r die Inbetriebnahme&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Windows XP Pro SP2 oder h&amp;ouml;her&lt;/li&gt;
+&lt;li&gt;min. 8Mbyte Webspace&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.iis.net/" target="_blank"&gt;Internetinformationsdienst&lt;/a&gt; IIS 5.1 oder h&amp;ouml;her&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.asp.net/" target="_blank"&gt;ASP.NET 2.0&lt;/a&gt; (Microsoft &lt;a href="http://www.microsoft.com/downloads/details.aspx?displaylang=de&amp;amp;FamilyID=0856eacb-4362-4b0d-8edd-aab15c5e04f5" target="_blank"&gt;.NET Framework 2.0&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;F&amp;uuml;r die Entwicklung/Erstellung:&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.microsoft.com/germany/msdn/vstudio/products/express/vwd/default.mspx" target="_blank"&gt;Visual Web Developer 2005&lt;/a&gt; (kostenloser &lt;a href="http://go.microsoft.com/fwlink/?LinkID=51413&amp;amp;clcid=0x407" target="_blank"&gt;download&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;(Falls Sie schon Erfahrung mit sharpcms auf Mono gemacht hat, schreiben Sie uns bitte &lt;a href="show/german/imprint/contact/"&gt;hier&lt;/a&gt;)&lt;br /&gt;(Falls Sie Erfahrungen mit sharpcms auf IIS 5 (unter Win 2000) gemacht haben, schreiben Sie uns bitte &lt;a href="show/german/imprint/contact.aspx"&gt;hier&lt;/a&gt;)&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<page>
+  <attributes>
+    <pagename>Kontakt</pagename>
+    <name>contact</name>
+    <menuname>Kontakt</menuname>
+    <pageidentifier>german/imprint/contact</pageidentifier>
+    <status>open</status>
+    <lastedited></lastedited>
+    <metakeywords>kontakt, gutsch, huber, sharpcms</metakeywords>
+    <metadescription>kontakt zu den sharpcms projekt team mitgliedern</metadescription>
+    <template></template>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header" publish="true" name="">
+          <text>Kontakt</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>none</offset>
+        </element>
+        <element type="form" publish="true" name="">
+          <subject>Kontaktformular</subject>
+          <category-list>
+            <item id="Frau_">Frau
+</item>
+            <item id="Herr">Herr </item>
+          </category-list>
+          <element-list>
+            <item id="Vorname_">Vorname
+</item>
+            <item id="Nachname_">Nachname
+</item>
+            <item id="Email_">Email
+</item>
+            <item id="Web">Web </item>
+          </element-list>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

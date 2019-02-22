@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<page>
+  <attributes>
+    <pagename>Lizenz</pagename>
+    <name>license</name>
+    <menuname>Lizenz</menuname>
+    <pageidentifier>german/license</pageidentifier>
+    <status>open</status>
+    <lastedited></lastedited>
+    <metakeywords>lizenz, gpl, open source, public</metakeywords>
+    <metadescription>die open source lizenz vom sharpcms</metadescription>
+    <template></template>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header" publish="true" name="">
+          <text>Lizenz</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>1 line</offset>
+        </element>
+        <element type="paragraph" publish="true" name="">
+          <header></header>
+          <headerstyle>Header1</headerstyle>
+          <text>&lt;p&gt;sharpcms ist unter der Open Source Lizenz &lt;a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html"&gt;GNU General Public License (GPL) v2:&lt;/a&gt;&amp;nbsp;Lizensiert:&lt;br /&gt;&lt;a href="http://www.codeplex.com/sharpcms/license"&gt;http://www.codeplex.com/sharpcms/license&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Die deutsche &amp;Uuml;bersetzung der GNU General Public License (GPL) v2 finden Sie &lt;a href="http://www.gnu.de/documents/gpl-2.0.de.html" target="_blank"&gt;hier&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Wenn Sie sharpcms unter einer anderen Lizenz nutzen m&amp;ouml;chten, &lt;a href="show/german/imprint/contact.aspx"&gt;kontaktieren Sie uns&lt;/a&gt;.&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

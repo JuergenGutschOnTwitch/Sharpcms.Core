@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<page>
+  <attributes>
+    <pagename>News</pagename>
+    <name>news</name>
+    <menuname>News</menuname>
+    <pageidentifier>german/about/news</pageidentifier>
+    <status>open</status>
+    <lastedited></lastedited>
+    <metakeywords>news, sharpcms</metakeywords>
+    <metadescription>neuigkeiten zu sharpcms</metadescription>
+    <template></template>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header" publish="true" name="">
+          <text>News auf sharpcms</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>1 line</offset>
+        </element>
+        <element type="paragraph" publish="true" name="">
+          <text>&lt;h2&gt;16. September 2008 - Neues vom sharpcms&amp;nbsp;&lt;/h2&gt;
+&lt;p&gt;Am Samstag den 13.09.2008 haben wir uns entschlossen eine Beta 4 des sharpcms zu ver&amp;ouml;ffentlichen. Beta 4&amp;nbsp; deswegen, weil wir seit der &amp;Uuml;bername des Projektes lediglich die &amp;Auml;nderungen von J&amp;uuml;rgen Gutsch und dem alten sharpcms Projektteam zusammengef&amp;uuml;hrt haben.&lt;/p&gt;
+&lt;h3&gt;Wie sieht die Zukunft aus?&lt;/h3&gt;
+&lt;p&gt;Unsere Hauptaufgabe wird es sein eine vollst&amp;auml;ndige Dokumentation zu ver&amp;ouml;ffentlichen. Wie das sharpcms soll auch die Dokumentation Open Source sein. Daher haben wir uns &amp;uuml;berlegt die Dokumentation in Form eines Wiki Systems bereitzustellen. Wir haben uns f&amp;uuml;r das ASP.NET Basierte ScrewTurn Wiki (&lt;a href="http://www.screwturn.eu/"&gt;http://www.screwturn.eu/&lt;/a&gt;) entschlossen und werden die Dokumentation unter &lt;a href="http://docs.sharpcms.org/"&gt;http://docs.sharpcms.org/&lt;/a&gt; ver&amp;ouml;ffentlichen. Das Wiki System ist bereits installiert und eingerichtet. Wer kann und will, darf sich gerne registrieren und an der Dokumentation mitarbeiten (&lt;a href="http://docs.sharpcms.org/Register.aspx"&gt;http://docs.sharpcms.org/Register.aspx&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Die zweite Aufgabe besteht darin ein Berechtigungssystem zu implementieren, dass es zum einen erlaubt bestimmte Seiten nur bestimmten Benutzergruppen zug&amp;auml;nglich zu machen und zum anderen bestimmte Seiten bestimmten Redakteuren freizuschalten.&lt;/p&gt;
+&lt;p&gt;Desweiteren sollten angefangene Plug-Ins (in sharpcms &amp;bdquo;Provider&amp;ldquo; genannt) ausprogrammiert und implementiert werden. Dazu geh&amp;ouml;ren ein Such-Provider, ein Cookie-Provider und ein Spamschutz f&amp;uuml;r E-Mailadressen.&lt;/p&gt;
+&lt;p&gt;Sobald diese drei Punkte umgesetzt und die gr&amp;ouml;bsten Bugs behoben sind, werden wir die erste finale Version ver&amp;ouml;ffentlichen. Wann genau das geschehen sein wird, k&amp;ouml;nnen wir heute nicht festlegen.&lt;/p&gt;
+&lt;h3&gt;Die Neuigkeiten kurz zusammengefasst:&lt;/h3&gt;
+&lt;p&gt;Wir haben auf Codeplex die Beta 4 ver&amp;ouml;ffentlicht:&lt;br /&gt;&lt;a href="http://www.codeplex.com/sharpcms/Release/ProjectReleases.aspx"&gt;http://www.codeplex.com/sharpcms/Release/ProjectReleases.aspx&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Die Dokumentation wurde mit dem ScrewTurn Wiki (&lt;a href="http://www.screwturn.eu/"&gt;http://www.screwturn.eu/&lt;/a&gt;) ver&amp;ouml;ffentlicht:&lt;br /&gt;&lt;a href="http://docs.sharpcms.org/"&gt;http://docs.sharpcms.org/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Die ersten Fragen sind auf Codeplex gepostet worden:&lt;br /&gt;&lt;a href="http://www.codeplex.com/sharpcms/Thread/List.aspx"&gt;http://www.codeplex.com/sharpcms/Thread/List.aspx&lt;/a&gt;&lt;br /&gt;Sowie die ersten Bugs&amp;nbsp; und Feature-Vorschlage wurden ver&amp;ouml;ffentlicht.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.codeplex.com/sharpcms/WorkItem/List.aspx"&gt;http://www.codeplex.com/sharpcms/WorkItem/List.aspx&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+        <element type="paragraph" publish="true" name="">
+          <text>&lt;h2&gt;26. August 2008 - Wichtige Neuigkeiten &amp;uuml;ber sharpcms&lt;/h2&gt;
+&lt;p&gt;Hallo sharpcms Benutzer,&lt;/p&gt;
+&lt;p&gt;Es gibt ein paar gro&amp;szlig;artige Neuigkeiten &amp;uuml;ber sharpcms und dem sharpcms Projekt.&lt;/p&gt;
+&lt;p&gt;Ab jetzt wird die Leitung des Projektes von Thomas Huber&amp;nbsp; (&lt;a href="http://www.klickflupp.ch"&gt;www.klickflupp.ch&lt;/a&gt;) aus der Schweiz und von J&amp;uuml;rgen Gutsch (&lt;a href="http://www.gutsch-online.de"&gt;www.gutsch-online.de&lt;/a&gt;) aus Deutschland gef&amp;uuml;hrt.&lt;/p&gt;
+&lt;p&gt;Die offizielle Adresse der sharpcms Website ist jetzt &lt;a href="../../../../../"&gt;www.sharpcms.org&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Ab jetzt wird der Quell-Code von sharpcms auf Microsofts Open Source Projekt-Hosting Website &amp;bdquo;Codeplex&amp;ldquo; bereitgestellt (&lt;a href="http://www.codeplex.de"&gt;www.codeplex.de&lt;/a&gt;).&lt;br /&gt;Die URL des Projektes auf Codeplex ist &lt;a href="http://www.codeplex.com/sharpcms"&gt;http://www.codeplex.com/sharpcms&lt;/a&gt;.&lt;br /&gt;Codeplex beinhaltet ein Diskussionsforum (&lt;a href="http://www.codeplex.com/sharpcms/Thread/List.aspx"&gt;http://www.codeplex.com/sharpcms/Thread/List.aspx&lt;/a&gt;). Alle weiteren Diskussionen sollten in&amp;nbsp; diesem Forum gestartet und gef&amp;uuml;hrt werden. Die deutsche Google Gruppe wird in den n&amp;auml;chsten Monaten geschlossen. Die englische Gruppe wird als Archiv offen bleiben.&lt;br /&gt;Codeplex beinhaltet au&amp;szlig;erdem ein Issue-Tracking (&lt;a href="http://www.codeplex.com/sharpcms/WorkItem/List.aspx"&gt;http://www.codeplex.com/sharpcms/WorkItem/List.aspx&lt;/a&gt;). Bitte meldet alle Fehler und W&amp;uuml;nsche bitte unter dieser URL.&lt;/p&gt;
+&lt;p&gt;Neue Releases von sharpcms k&amp;ouml;nnen unter folgender Adresse gefunden werden: &lt;a href="http://www.codeplex.com/sharpcms/Release/ProjectReleases.aspx"&gt;http://www.codeplex.com/sharpcms/Release/ProjectReleases.aspx&lt;/a&gt;&lt;br /&gt;Die Quell-Codes unter folgender Adresse heruntergeladen werden: &lt;a href="http://www.codeplex.com/sharpcms/SourceControl/ListDownloadableCommits.aspx"&gt;http://www.codeplex.com/sharpcms/SourceControl/ListDownloadableCommits.aspx&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Sharpcms wird weiterhin unter der GPL v2 ver&amp;ouml;ffentlicht (&lt;a href="http://www.codeplex.com/sharpcms/license"&gt;http://www.codeplex.com/sharpcms/license&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<page>
+  <attributes>
+    <pagename>Leeres xmlns Attribut entfernen</pagename>
+    <name>leeresxmlnxattribut</name>
+    <menuname>Leeres xmlns Attribut entfernen</menuname>
+    <pageidentifier>german/support/tips_und_tricks/leeresxmlnxattribut</pageidentifier>
+    <status>open</status>
+    <lastedited></lastedited>
+    <metakeywords>xmlns, Attribut</metakeywords>
+    <metadescription>Leeres xmlns Attribut in HTML Tags unterbinden</metadescription>
+    <template></template>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header" publish="true" name="">
+          <text>Leeres xmlns Attribut entfernen</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>1 line</offset>
+        </element>
+        <element type="paragraph" publish="true" name="">
+          <text>&lt;p&gt;Manchmal befinden sich im HTML Output viele leere xmlns Attribute (xmlns="") in den meisten HTML Tags. Sie k&amp;ouml;nnen das vermeiden, indem Sie &lt;strong&gt;xmlns="http://www.w3.org/1999/xhtml"&lt;/strong&gt; in das &amp;lt;xsl:stylesheet /&amp;gt;-Tag&amp;nbsp; in &lt;strong&gt;allen&lt;/strong&gt; XSLT Dateien einf&amp;uuml;gen.&lt;/p&gt;
+&lt;p&gt;Danke an Ithomeneas, der das in der &lt;a href="http://groups.google.com/group/SharpCms"&gt;Google Group&lt;/a&gt; gepostet hat.&lt;br /&gt;&lt;a href="http://groups.google.com/group/SharpCms/browse_thread/thread/b1dc854e017ff5d4/a3458db95eb71d5a"&gt;Zum Google Group Thread&lt;/a&gt;&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+      </elements>
+    </container>
+    <container name="news">
+      <elements></elements>
+    </container>
+  </containers>
+</page>

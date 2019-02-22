@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<process>
+  <admin>
+    <user>
+      <handle provider="User" />
+      <load provider="User" place="navigationplace" action="users" />
+      <load provider="User" place="navigationplace" action="groups" />
+      <load provider="User" place="contentplace" action="user" />
+    </user>
+    <choose>
+      <user>
+        <load provider="User" place="navigationplace" action="tree" />
+      </user>
+    </choose>
+  </admin>
+  <login>
+    <template name="login" />
+  </login>
+  <frontpage>
+    <load provider="User" place="basedata" action="frontpage" />
+  </frontpage>
+</process>

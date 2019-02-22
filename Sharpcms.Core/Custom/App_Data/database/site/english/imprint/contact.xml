@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<page>
+  <attributes>
+    <pagename>Contact</pagename>
+    <name>contact</name>
+    <menuname>Contact</menuname>
+    <pageidentifier>english/imprint/contact</pageidentifier>
+    <status>open</status>
+    <lastedited></lastedited>
+    <metakeywords>sharpcms, project, contact</metakeywords>
+    <metadescription>contact to the sharpcms project team</metadescription>
+    <template></template>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header" publish="true" name="">
+          <text>Contact</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>none</offset>
+        </element>
+        <element type="form" publish="true" name="">
+          <subject>Kontaktformular</subject>
+          <category-list>
+            <item id="Mrs_">Mrs
+</item>
+            <item id="Mr">Mr </item>
+          </category-list>
+          <element-list>
+            <item id="Name_">Name
+</item>
+            <item id="Last_name_">Last name
+</item>
+            <item id="Email_">Email
+</item>
+            <item id="Web">Web </item>
+          </element-list>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

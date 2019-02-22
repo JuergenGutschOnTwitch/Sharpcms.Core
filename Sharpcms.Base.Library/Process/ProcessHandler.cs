@@ -102,7 +102,7 @@ namespace Sharpcms.Base.Library.Process
                 // best way to allow for proper debugging
                 if (type == contentNode.Name)
                 {
-                    if (process.HttpPage.Request.ServerVariables["REMOTE_ADDR"] == "127.0.0.1")
+                    if (process.HttpPage.Request.RemoteAddress.ToString() == "127.0.0.1")
                     {
                         switch (contentNode.Name)
                         {

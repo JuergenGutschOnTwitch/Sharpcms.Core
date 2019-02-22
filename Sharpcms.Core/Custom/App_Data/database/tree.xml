@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<tree>
+  <german menuname="German" status="open" pageidentifier="german">
+    <about menuname="Start" pageidentifier="german/about" status="open" pagename="Das Open Source Content Management System sharpcms" lastedited="25.09.2007" metakeywords="sharpcms, content management, content management system, cms, xml, xslt" metadescription="sharpcms ist ein Open Source Content Management System das auf XML und XSLT basiert und complett in C# geschrieben ist" template="">
+      <news menuname="News" pageidentifier="german/about/news" status="open" pagename="News" lastedited="" metakeywords="news, sharpcms" metadescription="neuigkeiten zu sharpcms" template="" />
+      <features menuname="Features" pageidentifier="german/about/features" status="open" pagename="Features" lastedited="25.09.2007" metakeywords="sharpcms, content management, content management system, cms, xml, xslt" metadescription="die Features des sharpcms" template="" />
+      <release_notes menuname="Versionshinweise" pageidentifier="german/about/release_notes" status="hide" pagename="Versionshinweise" lastedited="25.09.2007" metakeywords="sharpcms, content management, content management system, cms, xml, xslt" metadescription="die Versionshinweise des sharpcms" />
+      <system_requirements menuname="Systemvoraussetzungen" pageidentifier="german/about/system_requirements" status="open" pagename="Systemvoraussetzungen" lastedited="05.01.2008" metakeywords="sharpcms, content management, content management system, cms, xml, xslt, system" metadescription="die Systemvoraussetzungen des sharpcms" template="" />
+    </about>
+    <support menuname="Support" pageidentifier="german/support" status="open" pagename="Support" lastedited="" metakeywords="suport, sharpcms, XML XSL, ASP.NET, C#" metadescription="support für sharpcms" template="">
+      <tips_und_tricks menuname="Tips und Tricks" pageidentifier="german/support/tips_und_tricks" status="open" pagename="Tips und Tricks" lastedited="" template="" metakeywords="tips, tricks, asp.net, c#, xml, xslt" metadescription="tips und tricks zu zu sharpcms">
+        <eventxmltrue menuname="Kein Gefummel mit URLs mehr" pageidentifier="german/support/tips_und_tricks/eventxmltrue" status="open" pagename="Kein Gefummel mit URLs mehr" lastedited="" metakeywords="event_xml, XML, Seitenstruktur" metadescription="event_xml=true zum anzeigen der XML Seitenstruktur" template="" />
+        <leeresxmlnxattribut menuname="Leeres xmlns Attribut entfernen" pageidentifier="german/support/tips_und_tricks/leeresxmlnxattribut" status="open" pagename="Leeres xmlns Attribut entfernen" lastedited="" metakeywords="xmlns, Attribut" metadescription="Leeres xmlns Attribut in HTML Tags unterbinden" template="" />
+      </tips_und_tricks>
+      <faq menuname="FAQ" pageidentifier="german/support/faq" status="open" pagename="Fragen und Antworten" lastedited="" metakeywords="" metadescription="" template="" />
+    </support>
+    <download menuname="Download" pageidentifier="german/download" status="open" pagename="Download" lastedited="05.01.2008" metakeywords="codeplex, download, sharpcms, source code, binary" metadescription="sharpcms bei codeplex herunterladen" template="" />
+    <license menuname="Lizenz" pageidentifier="german/license" status="open" pagename="Lizenz" lastedited="" metakeywords="lizenz, gpl, open source, public" metadescription="die open source lizenz vom sharpcms" template="" />
+    <cases menuname="Referenzen" pageidentifier="german/cases" status="open" pagename="Anwendungsfälle und Referenzen" lastedited="" metakeywords="referenzen, sharpcme, website, gutsch, huber" metadescription="weitere websites die mit sharpcms erstellt wurden" template="" />
+    <imprint menuname="Impressum" pageidentifier="german/imprint" status="open" pagename="Impressum" lastedited="" metakeywords="impressum, sharpcms, gutsch, huber" metadescription="alles über sharpcms und das sharpcmsprojekt" template="">
+      <contact menuname="Kontakt" pageidentifier="german/imprint/contact" status="open" pagename="Kontakt" lastedited="" metakeywords="kontakt, gutsch, huber, sharpcms" metadescription="kontakt zu den sharpcms projekt team mitgliedern" template="" />
+      <sitemap menuname="Sitemap" pageidentifier="german/imprint/sitemap" status="open" template="" pagename="Sitemap" lastedited="" metakeywords="Sitemap, sharpcms, webseiten" metadescription="Seitenübersicht von sharpcms.org" />
+    </imprint>
+    <search menuname="Suche" pageidentifier="german/search" status="open" template="" pagename="Suche" lastedited="" metakeywords="Volltextsuche" metadescription="Volltextsuche für sharpcms" />
+  </german>
+  <english menuname="English" status="open" pageidentifier="english">
+    <about menuname="About" status="open" pageidentifier="english/about" pagename="The open source content management system sharpcms" lastedited="" metakeywords="content, management, system, sharpcms, cms, open source, webdevelopment, website" metadescription="sharpcms is a open source content management system, based on XML and XSLT, written in C#" template="">
+      <news menuname="News" pageidentifier="english/about/news" status="open" pagename="News" lastedited="" metakeywords="sharpcms, news cms, open source" metadescription="news about sharpcms" template="" />
+      <features menuname="Features" status="open" pageidentifier="english/about/features" pagename="Features" lastedited="" template="" metakeywords="" metadescription="" />
+      <demo menuname="Demo" status="hide" pageidentifier="english/about/demo" pagename="Demo" lastedited="" template="" metakeywords="" metadescription="" />
+    </about>
+    <support menuname="Support" status="open" pageidentifier="english/support" pagename="Support" lastedited="" metakeywords="support, sharpcms, cms, open source, website, asp.net, c#" metadescription="support for sharpcms" template="">
+      <tips_n_tricks menuname="Tips and tricks" pageidentifier="english/support/tips_n_tricks" status="open" pagename="Tips'n'tricks" lastedited="" metakeywords="tips, tricks, sharpcms" metadescription="tips and tricks about sharpcms" template="">
+        <eventxmltrue menuname="No more fiddling with URLs" pageidentifier="english/support/tips_n_tricks/eventxmltrue" status="open" template="" pagename="No more fiddling with URLs" lastedited="" metakeywords="event_xml, XML, pagestructure" metadescription="event_xml=true to show the XML of the page" />
+        <eptyxmlattribute menuname="Omitting empty xmlns from output HTML" pageidentifier="english/support/tips_n_tricks/eptyxmlattribute" status="open" template="" pagename="Omitting empty xmlns from output HTML" lastedited="" metakeywords="xmlns, attribute" metadescription="Omitting empty xmlns from output HTML" />
+      </tips_n_tricks>
+    </support>
+    <download menuname="Download" status="open" pageidentifier="english/download" pagename="Download" lastedited="" metakeywords="sharpcms, codeplex, download, asp.net, xml, xsl, c#" metadescription="download sharpcms from codeplex" template=""></download>
+    <license menuname="License" status="open" pageidentifier="english/license" pagename="License" lastedited="" metakeywords="license, gpl, open source, cms, content, management" metadescription="sharpcms is licensed under gpl" template="" />
+    <cases menuname="Cases" status="open" pageidentifier="english/cases" pagename="Cases" lastedited="" metakeywords="websites, sharpcms, gutsch, huber, cases" metadescription="cases and references build with sharpcms" template="" />
+    <imprint menuname="Imprint" pageidentifier="english/imprint" status="open" pagename="Imprint" lastedited="jg" metakeywords="sharpcms, gutsch, huber" metadescription="all about sharpcms" template="">
+      <contact menuname="Contact" pageidentifier="english/imprint/contact" status="open" pagename="Contact" lastedited="" metakeywords="sharpcms, project, contact" metadescription="contact to the sharpcms project team" template="" />
+      <sitemap menuname="Sitemap" pageidentifier="english/imprint/sitemap" status="open" template="" pagename="Sitemap" lastedited="" metakeywords="sharpcms, websites, sitemap" metadescription="Site overview on sharpcms.org" />
+    </imprint>
+    <search menuname="Search" pageidentifier="english/search" status="open" template="" pagename="Search" lastedited="" metakeywords="" metadescription="" />
+  </english>
+</tree>

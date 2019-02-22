@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<page>
+  <attributes>
+    <pagename>Kein Gefummel mit URLs mehr</pagename>
+    <name>eventxmltrue</name>
+    <menuname>Kein Gefummel mit URLs mehr</menuname>
+    <pageidentifier>german/support/tips_und_tricks/eventxmltrue</pageidentifier>
+    <status>open</status>
+    <lastedited></lastedited>
+    <metakeywords>event_xml, XML, Seitenstruktur</metakeywords>
+    <metadescription>event_xml=true zum anzeigen der XML Seitenstruktur</metadescription>
+    <template></template>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header" publish="true" name="">
+          <text>Kein Gefummel mit URLs mehr</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>1 line</offset>
+        </element>
+        <element type="paragraph" publish="true" name="">
+          <text>&lt;p&gt;Anstatt&amp;nbsp;&lt;strong&gt;&amp;amp;event_xml=true&lt;/strong&gt;&amp;nbsp;oder &lt;strong&gt;?event_xml=true&lt;/strong&gt; jedesmal an die URL anzuf&amp;uuml;gen, kann &lt;a href="/?process=download/files/downloads/view_xml.zip&amp;amp;download=true"&gt;dieser Shortcut&lt;/a&gt; heruntergeladen und in die Toolbar des Internet Explorer eingef&amp;uuml;gt werden.&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+      </elements>
+    </container>
+    <container name="news">
+      <elements></elements>
+    </container>
+  </containers>
+</page>

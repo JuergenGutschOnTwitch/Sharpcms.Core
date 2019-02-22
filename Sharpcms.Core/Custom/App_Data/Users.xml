@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<users>
+  <users>
+    <user>
+      <groups>
+        <group name="anonymous " />
+      </groups>
+      <login>anonymous</login>
+    </user>
+    <user>
+      <groups>
+        <group name="admin" />
+      </groups>
+      <login>admin</login>
+      <password>1156371652</password>
+    </user>
+  </users>
+  <groups>
+    <group name="admin" />
+    <group name="anonymous" />
+  </groups>
+</users>

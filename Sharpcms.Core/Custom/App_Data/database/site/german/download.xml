@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<page>
+  <attributes>
+    <pagename>Download</pagename>
+    <name>download</name>
+    <menuname>Download</menuname>
+    <pageidentifier>german/download</pageidentifier>
+    <status>open</status>
+    <lastedited>05.01.2008</lastedited>
+    <metakeywords>codeplex, download, sharpcms, source code, binary</metakeywords>
+    <metadescription>sharpcms bei codeplex herunterladen</metadescription>
+    <template></template>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header" publish="true" name="">
+          <text>Download</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>1 line</offset>
+        </element>
+        <element type="paragraph" name="" publish="true">
+          <header></header>
+          <headerstyle>Header1</headerstyle>
+          <text>&lt;h2&gt;Verwendung der Bin&amp;auml;rversion von sharpcms:&lt;/h2&gt;
+&lt;p&gt;Um nur eine Webseite zu erstellen ben&amp;ouml;tigen sie nur diese Bin&amp;auml;rversion. Wir empfehlen diese mit &lt;a href="http://msdn.microsoft.com/vstudio/express/vwd/"&gt;Visual Studio Web Developer Express&lt;/a&gt; (als Website) zu &amp;ouml;ffnen. Da alle Daten in XML gehalten werden, ist es nicht n&amp;ouml;tig eine Datenbank zu installieren. &amp;Ouml;ffnen Sie die entzippte Webseite mit Visual Studio und klicken Sie auf Start. Das ist der ganze Trick ;-)&lt;/p&gt;
+&lt;h2&gt;Download:&lt;/h2&gt;
+&lt;p&gt;Die aktuellen Downloads finden Sie auf Codeplex unter folgender URL:&lt;br /&gt;&lt;a href="http://www.codeplex.com/sharpcms/Release/ProjectReleases.aspx"&gt;http://www.codeplex.com/sharpcms/Release/ProjectReleases.aspx&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Tip: Beginnen Sie damit sich das Verzeichnis "Custom" anzuschauen. Dort liegt das FrontEnd in Form von XSL und CSS Dateien.&lt;/p&gt;
+&lt;h2&gt;Verwendung der kompletten Sourcen&lt;/h2&gt;
+&lt;p&gt;Das ist nur n&amp;ouml;tig, wenn Sie mit dem Kern des Systems herumspielen m&amp;ouml;chten oder besser verstehen m&amp;ouml;chten wie es arbeitet. Wenn Sie vorhaben eigene Plugins zu schreiben, k&amp;ouml;nnen Sie das ebenfalls hiermit tun. Demn&amp;auml;chst werden weitere Tutorials zu dem Thema bereitstellen.&lt;/p&gt;
+&lt;p&gt;Die aktuellen Sourcen finden SIe auf Codeplex unter folgender URL:&lt;br /&gt;&lt;a href="http://www.codeplex.com/sharpcms/SourceControl/ListDownloadableCommits.aspx"&gt;http://www.codeplex.com/sharpcms/SourceControl/ListDownloadableCommits.aspx&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Wichtig!&lt;/strong&gt; In der Bin&amp;auml;rversion muss nur das "System" Verzeichnis upgedatet werden. Das FrontEnd und Ihre Daten befinden sich im "Custom" Verzeichnis.&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

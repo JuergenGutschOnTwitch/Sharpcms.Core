@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<page>
+  <attributes>
+    <pagename>Demo</pagename>
+    <name>demo</name>
+    <menuname>Demo</menuname>
+    <pageidentifier>english/about/demo</pageidentifier>
+    <status>hide</status>
+    <lastedited></lastedited>
+    <template></template>
+    <metakeywords></metakeywords>
+    <metadescription></metadescription>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="paragraph" publish="true" name="">
+          <header>Demo</header>
+          <text>&lt;p&gt;At the following address you can play around with the frontend. Read the info on how to login on the frontpage&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://demo.sharpcms.dk/admin.aspx"&gt;http://demo.sharpcms.dk/admin.aspx&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <headerstyle>Header1</headerstyle>
+          <picturepos>Left</picturepos>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

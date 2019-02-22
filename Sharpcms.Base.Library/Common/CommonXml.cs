@@ -127,7 +127,7 @@ namespace Sharpcms.Base.Library.Common
             // The file has changed or is not in memory
             XslCompiledTransform transform = new XslCompiledTransform(true);
 
-            XsltSettings xsltSettings = new XsltSettings(true, true);
+            XsltSettings xsltSettings = new XsltSettings(true, false);
             transform.Load(xsl, xsltSettings, new XmlUrlResolver());
 
             cache[cacheKey, fileDependency] = transform;

@@ -9,7 +9,7 @@ namespace Sharpcms.Base.Library.Http
             Request = new HttpRequestWrapper(context.Request);
             Response = new HttpResponseWrapper(context.Response);
             Session = new HttpSessionWrapper(context.Session);
-            Server = new HttpServerWrapper();
+            Server = new HttpServerWrapper(context);
             Application = new HttpApplicationState();
         }
 

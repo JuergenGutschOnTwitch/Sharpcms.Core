@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<process>
+  <admin rights="admin">
+    <template name="admin" />
+    <handle provider="Admin" />
+    <load provider="Admin" place="basedata" action="adminmenu" />
+    <choose>
+      <template name="choose" />
+      <file>
+        <load provider="File" place="navigationplace" action="tree" />
+      </file>
+      <folder>
+        <load provider="File" place="navigationplace" action="tree" />
+      </folder>
+      <page>
+        <load provider="Page" place="navigationplace" action="tree" />
+      </page>
+    </choose>
+    <changelog>
+      <load provider="LoadXml" place="contentplace" action="changelog" />
+    </changelog>
+    <file>
+      <handle provider="File" />
+      <load provider="File" place="navigationplace" action="tree" />
+      <edit notnull="true">
+        <file>
+          <load provider="File" place="contentplace" action="file" />
+        </file>
+        <folder>
+          <load provider="File" place="contentplace" action="folder" />
+        </folder>
+      </edit>
+    </file>
+    <page>
+      <handle provider="Page" />
+      <load provider="Page" place="navigationplace" action="tree" />
+      <edit notnull="true">
+        <load provider="Page" place="contentplace" action="page" />
+        <load provider="Page" place="basedata" action="elementlist" />
+        <load provider="Page" place="basedata" action="pagestatus" />
+      </edit>
+    </page>
+    <user>
+      <handle provider="User" />
+      <load provider="User" place="navigationplace" action="users" />
+      <load provider="User" place="navigationplace" action="groups" />
+      <load provider="User" place="contentplace" action="user" />
+    </user>
+  </admin>
+  <show>
+    <load provider="LoadXml" place="contentplace" action="changelog" />
+    <template name="show" />
+    <load provider="Page" place="navigationplace" action="tree" />
+    <load provider="Page" place="contentplace" action="page" />
+    <handle provider="Form" />
+  </show>
+  <download notnull="true">
+    <load provider="File" action="download" />
+  </download>
+  <load provider="Referrer" place="referrer" action="log" />
+  <login>
+    <template name="login" />
+  </login>
+</process>

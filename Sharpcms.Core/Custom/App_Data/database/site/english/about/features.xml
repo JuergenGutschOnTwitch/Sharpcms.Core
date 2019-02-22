@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<page>
+  <attributes>
+    <pagename>Features</pagename>
+    <name>features</name>
+    <menuname>Features</menuname>
+    <pageidentifier>english/about/features</pageidentifier>
+    <status>open</status>
+    <lastedited></lastedited>
+    <template></template>
+    <metakeywords></metakeywords>
+    <metadescription></metadescription>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header" publish="true" name="">
+          <text>Features</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>1 line</offset>
+        </element>
+        <element type="paragraph" publish="true" name="">
+          <header>Features</header>
+          <text>&lt;p&gt;This are the main features of sharpcms:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Separation between the core system and the specific Web site&lt;/li&gt;
+&lt;li&gt;User and group management&lt;/li&gt;
+&lt;li&gt;Image and document management, image editor&lt;/li&gt;
+&lt;li&gt;No layout constraints (individual design with XSL templates)&lt;/li&gt;
+&lt;li&gt;Multiple template are possible (XSL templates)&lt;/li&gt;
+&lt;li&gt;Plain text URLs (no IDs and numbers)&lt;/li&gt;
+&lt;li&gt;No database necessary (all data are stored in XML files)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The ouput of sharpcms is absolutly free, so you can implement the following features:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Search engine optimized code&lt;/li&gt;
+&lt;li&gt;Accessible output is possible&lt;/li&gt;
+&lt;li&gt;XHTML 1.0&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;You can define and design your own content container, so you can implement the following features to your web site:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Text (with a&amp;nbsp;WYSIWYG Editor)&lt;/li&gt;
+&lt;li&gt;Image galleries&amp;nbsp; (individual designed with XSL templates)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;NEW&lt;/strong&gt; Full text search&lt;/li&gt;
+&lt;li&gt;dynamic email forms&lt;/li&gt;
+&lt;li&gt;FAQ&lt;/li&gt;
+&lt;li&gt;Guest books&lt;/li&gt;
+&lt;li&gt;page comments&lt;/li&gt;
+&lt;li&gt;Show RSS news feeds&lt;/li&gt;
+&lt;li&gt;(you can create many more content templates)&lt;/li&gt;
+&lt;/ol&gt;</text>
+          <link></link>
+          <picture></picture>
+          <headerstyle>Header1</headerstyle>
+          <picturepos>Left</picturepos>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

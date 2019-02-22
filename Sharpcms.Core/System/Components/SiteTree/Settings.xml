@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<settings>
+  <sitetree>
+    <elementlist>
+      <top>
+        <item name="Template" attribute="template" type="listtemplate" />
+        <item name="Menu name" attribute="menuname" type="text" />
+        <item name="Page name" attribute="pagename" type="text" />
+        <item name="Created Date" attribute="createddate" type="hidden" />
+        <item name="Created User" attribute="createduser" type="hidden" />
+        <item name="Modified Date" attribute="modifieddate" type="hidden" />
+        <item name="Modified User" attribute="modifieduser" type="hidden" />
+        <item name="Keywords" attribute="metakeywords" type="text" />
+        <item name="Description" attribute="metadescription" type="textarea" height="50" />
+        <item name="Status" attribute="status" type="statuslist" />
+      </top>
+    </elementlist>
+    <treeFilename>~/Custom/App_Data/database/tree.xml</treeFilename>
+    <contentRoot>~/Custom/App_Data/database/site/</contentRoot>
+    <contentFilenameFormat>{0}.xml</contentFilenameFormat>
+    <pagestatus>
+      <open>Show in menu</open>
+      <hide>Hide from menu</hide>
+    </pagestatus>
+  </sitetree>
+  <admin>
+    <menu>
+      <left>
+        <item path="admin/page" weight="10">Pages</item>
+      </left>
+    </menu>
+  </admin>
+</settings>

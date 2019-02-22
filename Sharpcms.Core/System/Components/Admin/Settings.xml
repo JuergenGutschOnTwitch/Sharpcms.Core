@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<settings>
+  <templates>
+    <admin>~/System/Components/admin/Xsl/admin.xslt</admin>
+    <choose>~/System/Components/admin/Xsl/choose.xslt</choose>
+  </templates>
+  <admin>
+    <menu>
+      <right>
+        <item event="logout" weight="999">Log out</item>
+      </right>
+    </menu>
+  </admin>
+</settings>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<page>
+  <attributes>
+    <pagename>Omitting empty xmlns from output HTML</pagename>
+    <name>eptyxmlattribute</name>
+    <menuname>Omitting empty xmlns from output HTML</menuname>
+    <pageidentifier>english/support/tips_n_tricks/eptyxmlattribute</pageidentifier>
+    <status>open</status>
+    <template></template>
+    <lastedited></lastedited>
+    <metakeywords>xmlns, attribute</metakeywords>
+    <metadescription>Omitting empty xmlns from output HTML</metadescription>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header" publish="true" name="">
+          <text>Omitting "xmlns" from output HTML</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>1 line</offset>
+        </element>
+        <element type="paragraph" publish="true" name="">
+          <text>&lt;p&gt;Sometimes the HTML that is produced by sharpcms contains a lot of xmlns="" attributes on most tags. You can avoid this by adding &lt;strong&gt;xmlns="http://www.w3.org/1999/xhtml"&lt;/strong&gt; to the &amp;lt;xsl:stylesheet /&amp;gt;-tag in your XSLT-files.&lt;/p&gt;
+&lt;p&gt;Credit: Ithomeneas, who posted this on the mailing list.&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

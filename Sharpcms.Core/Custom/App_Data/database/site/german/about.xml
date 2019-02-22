@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<page>
+  <attributes>
+    <pagename>Das Open Source Content Management System sharpcms</pagename>
+    <name>about</name>
+    <menuname>Start</menuname>
+    <pageidentifier>german/about</pageidentifier>
+    <status>open</status>
+    <lastedited>25.09.2007</lastedited>
+    <metakeywords>sharpcms, content management, content management system, cms, xml, xslt</metakeywords>
+    <metadescription>sharpcms ist ein Open Source Content Management System das auf XML und XSLT basiert und complett in C# geschrieben ist</metadescription>
+    <template></template>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header" publish="true" name="">
+          <text>Open Source Content Management: sharpcms</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>1 line</offset>
+        </element>
+        <element type="paragraph" name="" publish="true">
+          <text>&lt;h2&gt;News&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="show/german/about/news/"&gt;16. September 2008 - Neues vom sharpcms &lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="show/german/about/news/"&gt;26. August 2008 - Wichtige Neuigkeiten &amp;uuml;ber sharpcms&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+        <element type="paragraph" name="" publish="true">
+          <header></header>
+          <headerstyle>Header1</headerstyle>
+          <text>&lt;h2&gt;Open Source Content Management System&amp;nbsp;&lt;/h2&gt;
+&lt;p&gt;Diese Website pr&amp;auml;sentiert das Open Source Content Management System sharpcms.&lt;/p&gt;
+&lt;p&gt;sharpcms ist ein CMS, das mit der Absicht entwickelt wurde, folgenden Ziele zu verwirklichen:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In hohem Grade flexibles Management.&lt;/li&gt;
+&lt;li&gt;Trennung zwischen Benutzung und Entwicklung.&lt;/li&gt;
+&lt;li&gt;Einfache Installation und Anwendung f&amp;uuml;r Entwickler.&lt;/li&gt;
+&lt;li&gt;Absolut freies Layouten.&lt;/li&gt;
+&lt;li&gt;Entwickelt f&amp;uuml;r kleine und mittelst&amp;auml;ndische Firmen.&lt;/li&gt;
+&lt;li&gt;Basiert auf . Net, XML, XSL, C#&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Bis jetzt befindet sich sharpcms im Betastadium. Das bedeutet, da&amp;szlig; es verwendbar und stabil ist, aber noch einige raue Kanten hat. &lt;br /&gt;Das vollst&amp;auml;ndige System liegt in einem Subversion&amp;nbsp;Repository und wir empfehlen dieses zu benutzen.&lt;/p&gt;
+&lt;p&gt;Es wird im Moment noch an einer Dokumentation gearbeitet. Also bitten wir Sie unserem Dikussions Forum auf Codeplex beizutreten um die neuesten Nachrichten und Suport zu sharpcms erhalten&lt;/p&gt;
+&lt;p&gt;&lt;span style="color: #800080;"&gt;&lt;a href="http://www.codeplex.com/sharpcms/Thread/List.aspx"&gt;http://www.codeplex.com/sharpcms/Thread/List.aspx&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

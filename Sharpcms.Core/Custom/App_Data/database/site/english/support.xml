@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<page>
+  <attributes>
+    <pagename>Support</pagename>
+    <name>support</name>
+    <menuname>Support</menuname>
+    <pageidentifier>english/support</pageidentifier>
+    <status>open</status>
+    <lastedited></lastedited>
+    <metakeywords>support, sharpcms, cms, open source, website, asp.net, c#</metakeywords>
+    <metadescription>support for sharpcms</metadescription>
+    <template></template>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header" publish="true" name="">
+          <text>Support and how to get involved</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>1 line</offset>
+        </element>
+        <element type="paragraph" publish="true" name="">
+          <text>&lt;p&gt;Go to the documentation to lern more about using sharpcms:&lt;br /&gt;&lt;a href="http://docs.sharpcms.org/"&gt;http://docs.sharpcms.org/&lt;/a&gt;. &lt;br /&gt;The documentation isn't currently finished. Please feel free to register and to work on the sharpcms documentation.&lt;/p&gt;
+&lt;p&gt;If you have questions about sharpcms, please use the discussions on Codeplex:&lt;br /&gt;&lt;a href="http://www.codeplex.com/sharpcms/Thread/List.aspx"&gt;http://www.codeplex.com/sharpcms/Thread/List.aspx&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The former discussions on Google Group is allready open as an archive:&lt;br /&gt;&lt;a href="http://groups.google.com/group/SharpCms"&gt;http://groups.google.com/group/SharpCms&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The&amp;nbsp;first video tutorial is up:&lt;br /&gt;&lt;a href="video/demo.html"&gt;http://www.sharpcms.org/video/demo.html&lt;/a&gt;&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+      </elements>
+    </container>
+    <container name="news">
+      <elements></elements>
+    </container>
+  </containers>
+</page>

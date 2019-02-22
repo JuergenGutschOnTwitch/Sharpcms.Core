@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<page>
+  <attributes>
+    <pagename>Imprint</pagename>
+    <name>imprint</name>
+    <menuname>Imprint</menuname>
+    <pageidentifier>english/imprint</pageidentifier>
+    <status>open</status>
+    <lastedited>jg</lastedited>
+    <metakeywords>sharpcms, gutsch, huber</metakeywords>
+    <metadescription>all about sharpcms</metadescription>
+    <template></template>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header" publish="true" name="">
+          <text>Imprint</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>1 line</offset>
+        </element>
+        <element type="paragraph" publish="true" name="">
+          <text>&lt;h2&gt;Responsible for the content:&lt;/h2&gt;
+&lt;p&gt;J&amp;uuml;rgen Gutsch&lt;br /&gt;Thomas Huber&lt;/p&gt;
+&lt;h2&gt;Implementation:&lt;/h2&gt;
+&lt;p&gt;J&amp;uuml;rgen Gutsch&lt;/p&gt;
+&lt;h2&gt;Contact information:&lt;/h2&gt;
+&lt;p&gt;J&amp;uuml;rgen Gutsch&lt;br /&gt;&lt;a href="http://www.gutsch-online.de/" target="_blank"&gt;http://www.gutsch-online.de/&lt;/a&gt;&lt;br /&gt;&lt;a href="mailto:juergen@gutsch-online.de"&gt;juergen [at] gutsch-online [dot] de&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Thomas Huber&lt;br /&gt;&lt;a href="http://www.klickflupp.ch/" target="_blank"&gt;http://www.klickflupp.ch/&lt;/a&gt;&lt;br /&gt;&lt;a href="mailto:thomas@klickflupp.ch"&gt;thomas&amp;nbsp;[at]&amp;nbsp;klickflupp [dot] ch&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Main&amp;nbsp;developers&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Mads H&amp;oslash;bye (Programmer)&lt;/li&gt;
+&lt;li&gt;Lars Sehested Geisler (Programmer)&lt;/li&gt;
+&lt;li&gt;J&amp;uuml;rgen Gutsch (Programmer)&lt;/li&gt;
+&lt;li&gt;Robert Kristiansen (Design)&lt;/li&gt;
+&lt;li&gt;Gert J&amp;oslash;rgensen (CSS and table-less HTML)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Other open-source projects we use&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;TinyMCE - WYSIWYG&lt;/li&gt;
+&lt;li&gt;Nifty corners&lt;/li&gt;
+&lt;li&gt;WebFX - tabpane&lt;/li&gt;
+&lt;li&gt;Destroydrop -&amp;nbsp;Dtree&lt;/li&gt;
+&lt;li&gt;Lucene.Net&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;About the Website&lt;/h2&gt;
+&lt;p&gt;The CSS layout of this website is based on the YAML Framework 3.0&amp;nbsp;(&lt;a href="http://www.yaml.de/en/"&gt;http://www.yaml.de/en/&lt;/a&gt;) by Dirk Jesse (&lt;a href="http://highresolution.info/"&gt;http://highresolution.info/&lt;/a&gt;)&lt;/p&gt;
+&lt;h2&gt;sharpcms is tlisted on following directories&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://content-management-directory.com"&gt;Content Management Directory&lt;/a&gt;&lt;br /&gt;&lt;a href="http://www.contentmanager.de"&gt;Contentmanager.de&lt;/a&gt;&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

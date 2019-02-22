@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<page>
+  <attributes>
+    <pagename>Tips'n'tricks</pagename>
+    <name>tips_n_tricks</name>
+    <menuname>Tips and tricks</menuname>
+    <pageidentifier>english/support/tips_n_tricks</pageidentifier>
+    <status>open</status>
+    <lastedited></lastedited>
+    <metakeywords>tips, tricks, sharpcms</metakeywords>
+    <metadescription>tips and tricks about sharpcms</metadescription>
+    <template></template>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header" publish="true" name="">
+          <text>Tips and tricks</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>1 line</offset>
+        </element>
+        <element type="paragraph" publish="true" name="">
+          <text>&lt;p&gt;On this page, we plan to add lots of tips'n'tricks to ease your work with sharpcms.&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+        <element type="overview" publish="true" name="">
+          <text></text>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

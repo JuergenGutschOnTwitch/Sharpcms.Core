@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<page>
+  <attributes>
+    <pagename>License</pagename>
+    <name>license</name>
+    <menuname>License</menuname>
+    <pageidentifier>english/license</pageidentifier>
+    <status>open</status>
+    <lastedited></lastedited>
+    <metakeywords>license, gpl, open source, cms, content, management</metakeywords>
+    <metadescription>sharpcms is licensed under gpl</metadescription>
+    <template></template>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header" publish="true" name="">
+          <text>License</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>1 line</offset>
+        </element>
+        <element type="paragraph" publish="true" name="">
+          <text>&lt;p&gt;Sharpcms.net is licensed under the open source license &lt;a href="http://www.gnu.org/licenses/old-licenses/gpl-2.0.html"&gt;GNU General Public License (GPL) v2:&lt;/a&gt;&lt;br /&gt;&lt;a href="http://www.codeplex.com/sharpcms/license"&gt;http://www.codeplex.com/sharpcms/license&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you wish to use this software under other licenses please &lt;a href="show/english/imprint/contact/"&gt;contact us&lt;/a&gt;.&lt;/p&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

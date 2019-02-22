@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<settings>
+  <filetree>
+    <filesPath>~/Custom/App_Data/Files</filesPath>
+  </filetree>
+  <admin>
+    <menu>
+      <left>
+        <item path="admin/file" weight="20">Files</item>
+      </left>
+    </menu>
+  </admin>
+</settings>

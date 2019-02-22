@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<page>
+  <attributes>
+    <pagename>Suche</pagename>
+    <name>search</name>
+    <menuname>Suche</menuname>
+    <pageidentifier>german/search</pageidentifier>
+    <status>open</status>
+    <template></template>
+    <lastedited></lastedited>
+    <metakeywords>Volltextsuche</metakeywords>
+    <metadescription>Volltextsuche für sharpcms</metadescription>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="search" publish="true" name="" />
+      </elements>
+    </container>
+  </containers>
+</page>

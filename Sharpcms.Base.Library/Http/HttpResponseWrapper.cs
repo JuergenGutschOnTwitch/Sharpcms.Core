@@ -19,7 +19,7 @@ namespace Sharpcms.Base.Library.Http
                 return _response.Cookies;
             }
         }
-        public HttpCache Cache { get; set; }
+        public HttpCache Cache { get; set; } //TODO: 
 
         public void Redirect(string uri)
         {

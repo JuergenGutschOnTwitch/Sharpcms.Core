@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<page>
+  <attributes>
+    <pagename>Cases</pagename>
+    <name>cases</name>
+    <menuname>Cases</menuname>
+    <pageidentifier>english/cases</pageidentifier>
+    <status>open</status>
+    <lastedited></lastedited>
+    <metakeywords>websites, sharpcms, gutsch, huber, cases</metakeywords>
+    <metadescription>cases and references build with sharpcms</metadescription>
+    <template></template>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header" publish="true" name="">
+          <text>Cases</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>1 line</offset>
+        </element>
+        <element type="block" publish="true" name="">
+          <title>GUTSCH-ONLINE</title>
+          <text>&lt;p&gt;J&amp;uuml;rgen Gutsch's website about webdevelopement, sharpcms, CMS and ASP.NET&lt;/p&gt;</text>
+          <link>http://www.gutsch-online.de</link>
+          <picture>Files/Pictures/gutsch-online_de_screen.png</picture>
+          <picturepos>Right</picturepos>
+        </element>
+        <element type="block" publish="true" name="">
+          <title>Klick... flupp!</title>
+          <text>&lt;p&gt;Thomas Huber's website&lt;/p&gt;</text>
+          <link>http://www.klickflupp.ch/</link>
+          <picture>Files/Pictures/klickflupp_screen.png</picture>
+          <picturepos>Right</picturepos>
+        </element>
+        <element type="block" publish="true" name="">
+          <title>iUcon</title>
+          <text>&lt;p&gt;Software&amp;nbsp;and&amp;nbsp;internet&amp;nbsp;services iUcon&lt;/p&gt;</text>
+          <link>http://www.iucon.biz/</link>
+          <picture>files/pictures/iucon.png</picture>
+          <picturepos>Right</picturepos>
+        </element>
+        <element type="block" publish="true" name="">
+          <title>Jutta Hoop</title>
+          <text>&lt;p&gt;Jutta Hoop - ideas&amp;nbsp;and&amp;nbsp;presentation&lt;/p&gt;</text>
+          <link>http://www.juttahoop.li</link>
+          <picture>Files/Pictures/juttahoop_screen.png</picture>
+          <picturepos>Right</picturepos>
+        </element>
+        <element type="block" publish="true" name="">
+          <title>yoga-jivana.de</title>
+          <text>&lt;p&gt;This is a website for Yoga&amp;nbsp;teachers&amp;nbsp;of the Yoga Jivana Ashram&lt;/p&gt;</text>
+          <link>http://www.yoga-jivana.de</link>
+          <picture>Files/Pictures/yoga.png</picture>
+          <picturepos>Right</picturepos>
+        </element>
+        <element type="block" publish="true" name="">
+          <title>Pro sound &amp; light Veranstaltungstechnik</title>
+          <text>&lt;p&gt;Pro sound &amp;amp; light&lt;/p&gt;</text>
+          <link>http://www.psl.li/</link>
+          <picture>Files/Pictures/psl_li_screen.png</picture>
+          <picturepos>Right</picturepos>
+        </element>
+        <element type="block" publish="true" name="">
+          <title>Hvilket Europa</title>
+          <text></text>
+          <link>http://www.hvilketeuropa.dk/</link>
+          <picture>Files/Pictures/hvilketeuropa_screen.png</picture>
+          <picturepos>Right</picturepos>
+        </element>
+        <element type="block" publish="true" name="">
+          <title>LinKS- Leadership in the Knowledge Society</title>
+          <text></text>
+          <link>http://www.linkslabs.com/</link>
+          <picture>Files/Pictures/linkslabs_screen.png</picture>
+          <picturepos>Right</picturepos>
+        </element>
+        <element type="block" publish="true" name="">
+          <title>Odense Symfoniorkester</title>
+          <text></text>
+          <link>http://www.odensesymfoni.dk/</link>
+          <picture>Files/Pictures/odensesymfoni_screen.png</picture>
+          <picturepos>Right</picturepos>
+        </element>
+        <element type="block" publish="true" name="">
+          <title>pt~trading</title>
+          <text></text>
+          <link>http://www.pttrading.dk/</link>
+          <picture>Files/Pictures/pttrading_screen.png</picture>
+          <picturepos>Right</picturepos>
+        </element>
+        <element type="block" publish="true" name="">
+          <title>CEPOS</title>
+          <text></text>
+          <link>http://www.karakter.dk/</link>
+          <picture>Files/Pictures/karakter_screen.png</picture>
+          <picturepos>Right</picturepos>
+        </element>
+        <element type="block" publish="true" name="">
+          <title>matro.it</title>
+          <text></text>
+          <link>http://www.matro.it/site/</link>
+          <picture>Files/Pictures/matro_screen.png</picture>
+          <picturepos>Right</picturepos>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

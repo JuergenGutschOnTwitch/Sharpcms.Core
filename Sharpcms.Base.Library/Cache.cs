@@ -21,7 +21,7 @@ namespace Sharpcms.Base.Library
         {
             get
             {
-                if (_applicationState["cache"] == null)
+                if (!_applicationState.ContainsKey("cache"))
                 {
                     Clean();
                 }
