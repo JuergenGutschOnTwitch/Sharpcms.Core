@@ -35,30 +35,6 @@ namespace Sharpcms
             }
         }
 
-        public static void Request(HttpContext context, String entryPageName)
-        {
-            var page = new HttpPage(context);
-            var httpRequest = page.Request;
-            var applicationPath = httpRequest.ApplicationPath;
-
-            if (applicationPath != null)
-            {
-                var currentUrl = httpRequest.Path;
-                var file = page.Server.MapPath(currentUrl.Substring(currentUrl.LastIndexOf("/", StringComparison.Ordinal) + 1));
-
-                if (!File.Exists(file))
-                {
-                    var process = currentUrl.Substring(applicationPath.Length).TrimStart('/').Replace(".aspx", String.Empty);
-                    var querystring = httpRequest.QueryString;
-                    var rewritePath = !String.IsNullOrEmpty(querystring)
-                        ? String.Format("~/{0}.aspx?process={1}&{2}", entryPageName, process, querystring)
-                        : String.Format("~/{0}.aspx?process={1}", entryPageName, process);
-
-                    page.Response.Redirect(rewritePath); // RewritePath
-                }
-            }
-        }
-
         private static void PrepareConfiguration(HttpPage httpPage)
         {
             var cache = new Cache(httpPage.Application);

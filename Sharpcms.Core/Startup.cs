@@ -25,9 +25,7 @@ namespace Sharpcms.Core
             }
 
             app.UseSession();
-            app.UseStaticFiles(new StaticFileOptions {
-                RequestPath = "/Custom/Components"
-            });
+            app.UseStaticFiles();
 
             app.UseSharpcms();
         }
@@ -54,7 +52,6 @@ namespace Sharpcms.Core
         public async Task InvokeAsync(HttpContext context)
         {
             await Sharpcms.Send(context);
-
             await _next(context);
         }
     }

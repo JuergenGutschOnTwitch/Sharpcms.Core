@@ -15,4 +15,64 @@
     <ProjectReference Include="..\Sharpcms.Base.Library\Sharpcms.Base.Library.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\System\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Custom\Components\FrontEnd\css\basemod.css" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\css\central.css" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\css\content.css" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\css\ie.css" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\css\nav.css" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\css\patch_layout_draft.css" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\css\Style.css" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\img\banner.gif" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\img\bg.gif" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\img\ext_link.gif" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\img\ext_mail.gif" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\img\slogo.gif" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\js\searchhi.js" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\yaml\central_draft.css" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\yaml\core\base.css" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\yaml\core\iehacks.css" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\yaml\core\print_base.css" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\yaml\core\slim_base.css" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\yaml\core\slim_iehacks.css" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\yaml\core\slim_print_base.css" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\yaml\debug\debug.css" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\yaml\debug\images\grid_pattern.png" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\yaml\debug\images\warning_iehacks.gif" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\yaml\debug\images\yaml_debug.gif" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\yaml\markup_draft.html" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\yaml\navigation\images\shiny_buttons\background.gif" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\yaml\navigation\images\shiny_buttons\background_active.gif" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\yaml\navigation\images\sliding_door\gfx_sliding_door.psd" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\yaml\navigation\images\sliding_door\round\bg.gif" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\yaml\navigation\images\sliding_door\round\left.gif" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\yaml\navigation\images\sliding_door\round\left_on.gif" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\yaml\navigation\images\sliding_door\round\right.gif" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\yaml\navigation\images\sliding_door\round\right_on.gif" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\yaml\navigation\images\vlist\square\node.gif" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\yaml\navigation\images\vlist\square\node_minus.gif" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\yaml\navigation\images\vlist\square\node_plus.gif" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\yaml\navigation\images\vlist\square\subnode.gif" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\yaml\navigation\images\vlist\square\subnode_minus.gif" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\yaml\navigation\images\vlist\square\subnode_plus.gif" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\yaml\navigation\nav_shinybuttons.css" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\yaml\navigation\nav_slidingdoor.css" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\yaml\navigation\nav_vlist.css" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\yaml\patches\patch_layout_draft.css" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\yaml\patches\patch_nav_vlist.css" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\yaml\print\print_003_draft.css" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\yaml\print\print_020_draft.css" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\yaml\print\print_023_draft.css" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\yaml\print\print_100_draft.css" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\yaml\print\print_103_draft.css" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\yaml\print\print_120_draft.css" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\yaml\print\print_123_draft.css" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\yaml\screen\basemod_draft.css" />
+    <None Include="wwwroot\Custom\Components\FrontEnd\yaml\screen\content_default.css" />
+  </ItemGroup>
+
 </Project>

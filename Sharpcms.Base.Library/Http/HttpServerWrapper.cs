@@ -19,6 +19,11 @@ namespace Sharpcms.Base.Library.Http
             return System.Web.HttpUtility.UrlEncode(input);
         }
 
+        public string HtmlDecode(string html)
+        {
+            return System.Web.HttpUtility.HtmlDecode(html);
+        }
+
         public string MapPath(string relative)
         {
             var env =  _context.RequestServices.GetService<IHostingEnvironment>();
@@ -26,11 +31,6 @@ namespace Sharpcms.Base.Library.Http
             relative = relative.Replace("~/", string.Empty).Replace('/', Path.DirectorySeparatorChar);
             var result = Path.Combine(rootpath, relative);
             return result;
-        }
-
-        public string HtmlDecode(string html)
-        {
-            return System.Web.HttpUtility.HtmlDecode(html);
         }
     }
 }
