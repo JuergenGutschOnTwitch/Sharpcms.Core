@@ -33,12 +33,15 @@ namespace Sharpcms.Base.Library.Http
                 Add(key, _request.Query[key]);
             }
 
-            var process = Path;
-            if (!String.IsNullOrWhiteSpace(ApplicationPath))
+            if (!ContainsKey("process"))
             {
-                process = process.Replace(ApplicationPath, String.Empty);
+                var process = Path;
+                if (!String.IsNullOrWhiteSpace(ApplicationPath))
+                {
+                    process = process.Replace(ApplicationPath, String.Empty);
+                }
+                Add("process", process.TrimStart('/'));
             }
-            Add("process", process.TrimStart('/'));
         }
 
         public IRequestCookieCollection Cookies

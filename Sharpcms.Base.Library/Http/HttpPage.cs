@@ -11,6 +11,7 @@ namespace Sharpcms.Base.Library.Http
             Session = new HttpSessionWrapper(context.Session);
             Server = new HttpServerWrapper(context);
             Application = new HttpApplicationState();
+            Response.Cache = new HttpCacheWrapper();
         }
 
         public HttpRequestWrapper Request { get; set; }
