@@ -15,7 +15,30 @@ namespace Sharpcms.Base.Library.Http
         public HttpRequestWrapper(HttpRequest request)
         {
             _request = request;
+            ProcessFormAndQueryParameters();
             _requestHeaders = _request.GetTypedHeaders();
+        }
+
+        private void ProcessFormAndQueryParameters()
+        {
+            if (_request.HasFormContentType)
+            {
+                foreach (var key in _request.Form.Keys)
+                {
+                    Add(key, _request.Form[key]);
+                }
+            }
+            foreach (var key in _request.Query.Keys)
+            {
+                Add(key, _request.Query[key]);
+            }
+
+            var process = Path;
+            if (!String.IsNullOrWhiteSpace(ApplicationPath))
+            {
+                process = process.Replace(ApplicationPath, String.Empty);
+            }
+            Add("process", process.TrimStart('/'));
         }
 
         public IRequestCookieCollection Cookies

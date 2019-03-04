@@ -357,9 +357,9 @@ namespace Sharpcms.Base.Library.Process
 
         private void ProcessQueries()
         {
-            List<String> keys = HttpPage.Request.Form.Cast<String>().ToList();
+            List<String> keys = HttpPage.Request.Keys.ToList(); //.Form.Keys.ToList();
 
-            keys.AddRange(HttpPage.Request.Query.Cast<String>());
+           // keys.AddRange(HttpPage.Request.Query.Keys);
 
             foreach (var key in keys)
             {

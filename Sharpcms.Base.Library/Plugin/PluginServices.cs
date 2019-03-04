@@ -112,7 +112,7 @@ namespace Sharpcms.Base.Library.Plugin
             _colAvailablePlugins.Clear();
 
             //Go through all the files in the plugin directory
-            foreach (String fileOn in Directory.GetFiles(path))
+            foreach (String fileOn in Directory.GetFiles(path,"*.dll", SearchOption.AllDirectories))
             {
                 FileInfo file = new FileInfo(fileOn);
 
