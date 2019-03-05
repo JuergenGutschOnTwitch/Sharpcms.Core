@@ -1,8 +1,7 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
-using System.Threading.Tasks;
+using Sharpcms.Base.Core;
 
 namespace Sharpcms.Core
 {
@@ -28,31 +27,6 @@ namespace Sharpcms.Core
             app.UseStaticFiles();
 
             app.UseSharpcms();
-        }
-    }
-
-    public static class ApplicationBuilderExtensions
-    {
-        public static IApplicationBuilder UseSharpcms(this IApplicationBuilder app)
-        {
-            app.UseMiddleware<SharpcmsMiddleware>();
-            return app;
-        }
-    }
-
-    public class SharpcmsMiddleware
-    {
-        private readonly RequestDelegate _next;
-
-        public SharpcmsMiddleware(RequestDelegate next)
-        {
-            _next = next;
-        }
-
-        public async Task InvokeAsync(HttpContext context)
-        {
-            await Sharpcms.Send(context);
-            await _next(context);
         }
     }
 }
