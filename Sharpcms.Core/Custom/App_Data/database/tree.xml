@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-
+﻿<?xml version="1.0" encoding="utf-8"?>
 <tree>
   <german menuname="German" status="open" pageidentifier="german">
     <about menuname="Start" pageidentifier="german/about" status="open" pagename="Das Open Source Content Management System sharpcms" lastedited="25.09.2007" metakeywords="sharpcms, content management, content management system, cms, xml, xslt" metadescription="sharpcms ist ein Open Source Content Management System das auf XML und XSLT basiert und complett in C# geschrieben ist" template="">
@@ -25,7 +24,7 @@
     <search menuname="Suche" pageidentifier="german/search" status="open" template="" pagename="Suche" lastedited="" metakeywords="Volltextsuche" metadescription="Volltextsuche für sharpcms" />
   </german>
   <english menuname="English" status="open" pageidentifier="english">
-    <about menuname="About" status="open" pageidentifier="english/about" pagename="The open source content management system sharpcms" lastedited="" metakeywords="content, management, system, sharpcms, cms, open source, webdevelopment, website" metadescription="sharpcms is a open source content management system, based on XML and XSLT, written in C#" template="">
+    <about menuname="About" status="open" pageidentifier="english/about" pagename="The open source content management system sharpcms" lastedited="" metakeywords="content, management, system, sharpcms, cms, open source, webdevelopment, website" metadescription="sharpcms is a open source content management system, based on XML and XSLT, written in C# " template="" createddate="" createduser="" modifieddate="" modifieduser="">
       <news menuname="News" pageidentifier="english/about/news" status="open" pagename="News" lastedited="" metakeywords="sharpcms, news cms, open source" metadescription="news about sharpcms" template="" />
       <features menuname="Features" status="open" pageidentifier="english/about/features" pagename="Features" lastedited="" template="" metakeywords="" metadescription="" />
       <demo menuname="Demo" status="hide" pageidentifier="english/about/demo" pagename="Demo" lastedited="" template="" metakeywords="" metadescription="" />

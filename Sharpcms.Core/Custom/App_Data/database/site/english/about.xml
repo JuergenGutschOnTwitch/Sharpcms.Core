@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <page>
   <attributes>
     <pagename>The open source content management system sharpcms</pagename>
@@ -8,8 +8,12 @@
     <status>open</status>
     <lastedited></lastedited>
     <metakeywords>content, management, system, sharpcms, cms, open source, webdevelopment, website</metakeywords>
-    <metadescription>sharpcms is a open source content management system, based on XML and XSLT, written in C#</metadescription>
+    <metadescription>sharpcms is a open source content management system, based on XML and XSLT, written in C# </metadescription>
     <template></template>
+    <createddate></createddate>
+    <createduser></createduser>
+    <modifieddate></modifieddate>
+    <modifieduser></modifieduser>
   </attributes>
   <containers>
     <container name="content">
@@ -21,8 +25,8 @@
         </element>
         <element type="paragraph" publish="true" name="">
           <text>&lt;h2&gt;News&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="show/english/about/news/"&gt;16/9/2008 - News about sharpcms&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;&lt;a href="show/english/about/news/"&gt;8/26/2008 - Important news about sharpcms&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="/admin/page/edit/english/about/show/english/about/news/"&gt;16/9/2008 - News about sharpcms&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="/admin/page/edit/english/about/show/english/about/news/"&gt;8/26/2008 - Important news about sharpcms&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&amp;nbsp;&lt;/p&gt;</text>
           <link></link>
           <picture></picture>
@@ -46,6 +50,11 @@
           <picture></picture>
           <picturepos>Left</picturepos>
         </element>
+      </elements>
+    </container>
+    <container name="test">
+      <elements>
+        <element type="sitemap" name="" publish="true" />
       </elements>
     </container>
   </containers>

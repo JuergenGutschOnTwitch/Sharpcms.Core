@@ -1,0 +1,142 @@
+html
+{
+    font-size: 100.1%;
+}
+body
+{
+    font-size: 62.5%;
+    font-family: Verdana, Helvetika, Sans-Serif;
+    background-color: #EEEEEE;
+    background-image: url(../img/bg.gif);
+    background-repeat: repeat-x;
+}
+body, div, p
+{
+    margin: 0;
+    padding: 0;
+}
+img
+{
+    border: none 0px;
+}
+#page
+{
+    margin: 2em auto 2em auto;
+    width: 80.5em;
+    background-color: #FFFFFF;
+}
+#head1
+{
+    border-top: solid 1px #999999;
+    border-left: solid 1px #999999;
+    border-right: solid 1px #999999;
+}
+#head1 #logo
+{
+    float: left;
+}
+#head1 #topmenu
+{
+    float: right;
+}
+#head1 #topmenu ul, #topmenu li
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style-image: none;
+}
+#head1 #topmenu li
+{
+    float: right;
+    display: block;
+}
+#head1 #topmenu li a
+{
+    display: block;
+    margin: 0.7em 1em 0.7em 1em;
+    text-decoration: none;
+}
+#head1 #topmenu li a span
+{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #7697AB;
+}
+
+#head2
+{
+    height: 2em;
+    background-color: #7697AB;
+}
+#head3
+{
+    border-left: solid 1px #999999;
+    border-right: solid 1px #999999;
+    height: 11em;
+    background-image: url(../img/banner.gif);
+    position: relative;
+}
+#head3 .teaser
+{
+    position: absolute;
+    left: 1.8em;
+    bottom: 1em;
+    color: #999999;
+    width: 35em;
+}
+#menu
+{
+    height: 3em;
+    background-color: #7697AB;
+}
+#menu ul, #menu li
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style-image: none;
+}
+#menu li
+{
+    float: left;
+    display: block;
+}
+#menu li a
+{
+    display: block;
+    margin: 0.7em 1em 0.7em 1em;
+    text-decoration: none;
+}
+#menu li a span
+{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+#content
+{
+    border-left: solid 1px #999999;
+    border-right: solid 1px #999999;
+}
+#content #maincontent
+{
+    float: left;
+    width: 60em;
+    border-right: solid 1px #999999;
+}
+#content #rightcontent
+{
+    width: 20em;
+    float: right;
+}
+
+.clear
+{
+    clear: both;
+}
+.hide
+{
+    display: none;
+}
