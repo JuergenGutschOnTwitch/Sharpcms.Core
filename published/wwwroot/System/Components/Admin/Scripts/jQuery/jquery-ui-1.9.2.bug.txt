@@ -1,5 +1,0 @@
-﻿Bei der Version 1.9.2 von jquery UI wird beim laden der Tabs auch die Root-Seite (z.B. localhost) nachgeladen und im Container des jeweiligen Tagbs eingefügt.
-
-Mit dem folgenden Link konnte ich den Bug vorübergehend beheben.
-
-http://stackoverflow.com/questions/13837304/jquery-ui-non-ajax-tab-loading-whole-website-into-itself

@@ -21,7 +21,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sharpcms.Providers.ErrorLog
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sharpcms.Providers.Search", "Sharpcms.Providers.Search\Sharpcms.Providers.Search.csproj", "{27C5BB99-2EB4-49E7-814C-3BC37A2D047C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sharpcms.Core", "Sharpcms.Core\Sharpcms.Core.csproj", "{8C5DDE60-E166-416C-82A9-F704B3A98227}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sharpcms.Core", "Sharpcms.Core\Sharpcms.Core.csproj", "{8C5DDE60-E166-416C-82A9-F704B3A98227}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".build", ".build", "{FDAC4FE5-976B-4044-9930-E073F0EB2B9F}"
+	ProjectSection(SolutionItems) = preProject
+		build.cake = build.cake
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
