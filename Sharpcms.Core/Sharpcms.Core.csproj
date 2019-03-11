@@ -19,4 +19,8 @@
     <ProjectReference Include="..\Sharpcms.Providers.Search\Sharpcms.Providers.Search.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Custom\**" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="System\**" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
 </Project>
