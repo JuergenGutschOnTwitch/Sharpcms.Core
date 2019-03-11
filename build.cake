@@ -7,7 +7,7 @@ var branchname = Argument("branchname", "master");
 var environment = branchname == "master" ? "Production" : "Development";
 
 var buildnumber = Argument("buildnumber", "0");
-var publishfolder = Argument("publishfolder", "./published/");
+var publishfolder = Argument("publishfolder", "./drop/");
 
 var build =  environment != "Production" ? String.Format("-build{0}", buildnumber) : "";
 var version = "0.0.1";
