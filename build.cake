@@ -34,7 +34,6 @@ Task("DotNetBuild")
 		};
 		DotNetCoreBuild("./Sharpcms.Core.sln", settings);
 	});
-
 	
 /*
 Task("DotNetTest")
@@ -49,7 +48,6 @@ Task("DotNetTest")
 		DotNetCoreTest("./Sharpcms.Core.Tests/", settings);
 	});
 	*/
-
 
 Task("DotNetPublish")
 	.IsDependentOn("DotNetBuild")
