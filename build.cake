@@ -1,5 +1,3 @@
-using System.Linq;
-
 var target = Argument("target", "Default");
 var configuration = Argument("configuration", "Release");
 
@@ -10,7 +8,7 @@ var buildnumber = Argument("buildnumber", "0");
 var publishfolder = Argument("publishfolder", "./drop/");
 
 var build =  environment != "Production" ? String.Format("-build{0}", buildnumber) : "";
-var version = "0.0.1";
+var version = "2.0.0";
 var artifactName = $"Sharpcms.Core-{version}{build}.zip";
 
 Task("CleanDirectory")
@@ -36,9 +34,9 @@ Task("DotNetBuild")
 		};
 		DotNetCoreBuild("./Sharpcms.Core.sln", settings);
 	});
-
 	
-/*Task("DotNetTest")
+/*
+Task("DotNetTest")
 	.IsDependentOn("DotNetBuild")
 	.Does(() => 
 	{
@@ -48,7 +46,8 @@ Task("DotNetBuild")
 			NoBuild = true
 		};
 		DotNetCoreTest("./Sharpcms.Core.Tests/", settings);
-	});*/
+	});
+	*/
 
 Task("DotNetPublish")
 	.IsDependentOn("DotNetBuild")
@@ -81,8 +80,9 @@ Task("PublishArtifact")
 	.IsDependentOn("PackApplication")
 	.Does(() => 
 	{
-		var target = $"./published/{artifactName}";
-		CopyFile(target, System.IO.Path.Combine(publishfolder, artifactName));
+		var source = $"./published/{artifactName}";
+		var target = System.IO.Path.Combine(publishfolder, artifactName);
+		CopyFile(source, target);
 		Information($"Published to {target}.");
 	});
 
