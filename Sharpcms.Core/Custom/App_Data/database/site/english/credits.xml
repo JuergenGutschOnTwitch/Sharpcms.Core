@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<page>
+  <attributes>
+    <pagename>Credits</pagename>
+    <name>credits</name>
+    <menuname>Credits</menuname>
+    <pageidentifier>english/credits</pageidentifier>
+    <status>hide</status>
+    <lastedited></lastedited>
+    <template></template>
+    <metakeywords></metakeywords>
+    <metadescription></metadescription>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="paragraph">
+          <header>Credits</header>
+          <text>&lt;p&gt;This system on other co developers and software packages. Therefore a little credit are in place:&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Main&amp;nbsp;developers&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Mads H&amp;oslash;bye (Programmer)&lt;/li&gt;&lt;li&gt;Lars Sehested Geisler (Programmer)&lt;/li&gt;&lt;li&gt;Robert Kristiansen (Design)&lt;/li&gt;&lt;li&gt;Gert J&amp;oslash;rgensen (CSS and table-less HTML)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Other open-source projects we use&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;TinyMCE - WYSIWYG&lt;/li&gt;&lt;li&gt;Nifty corners&lt;/li&gt;&lt;li&gt;WebFX - tabpane&lt;/li&gt;&lt;li&gt;Destroydrop -&amp;nbsp;Dtree &lt;/li&gt;&lt;/ul&gt;</text>
+          <link></link>
+          <picture></picture>
+          <headerstyle>Header1</headerstyle>
+          <picturepos>Left</picturepos>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<process>
+  <admin>
+    <file>
+      <handle provider="File" />
+      <load provider="File" place="navigationplace" action="tree" />
+      <edit notnull="true">
+        <file>
+          <load provider="File" place="contentplace" action="file" />
+        </file>
+        <folder>
+          <load provider="File" place="contentplace" action="folder" />
+        </folder>
+      </edit>
+    </file>
+    <choose>
+      <file>
+        <load provider="File" place="navigationplace" action="tree" />
+      </file>
+      <folder>
+        <load provider="File" place="navigationplace" action="tree" />
+      </folder>
+    </choose>
+  </admin>
+  <download notnull="true">
+    <load provider="File" action="download" />
+  </download>
+</process>

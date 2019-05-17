@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<settings>
+	<sitetree>
+		<elementlist>
+      <search />
+		</elementlist>
+	</sitetree>
+	<search>
+		<index>~/Custom/App_Data/Index</index>
+	</search>
+</settings>

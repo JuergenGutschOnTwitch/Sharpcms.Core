@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<page>
+  <attributes>
+    <pagename>Neue Seite</pagename>
+    <name>neue_seite</name>
+    <menuname>Neue Seite</menuname>
+    <pageidentifier>german/support/neue_seite</pageidentifier>
+    <status>hide</status>
+  </attributes>
+  <containers />
+</page>

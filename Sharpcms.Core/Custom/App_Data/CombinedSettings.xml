@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<settings>
+  <templates>
+    <show>~/Custom/Components/FrontEnd/Xsl/Show.xslt</show>
+    <admin>~/System/Components/admin/Xsl/admin.xslt</admin>
+    <choose>~/System/Components/admin/Xsl/choose.xslt</choose>
+    <login>~/System/Components/Users/Xsl/login.xslt</login>
+  </templates>
+  <sitetree>
+    <containers>
+      <item>content</item>
+    </containers>
+    <stdpage>show/english/about</stdpage>
+    <elementlist>
+      <paragraph>
+        <item name="Header" attribute="header" type="text" />
+        <item name="Header type" attribute="headerstyle" type="list">
+          <item>Header1</item>
+          <item>Header2</item>
+        </item>
+        <item name="Text" attribute="text" type="tinymce" height="300" />
+        <item name="Link" attribute="link" type="choosepage" />
+        <item name="Picture" attribute="picture" type="choosefile" />
+        <item name="Picture pos." attribute="picturepos" type="list">
+          <item>Left</item>
+          <item>Right</item>
+        </item>
+      </paragraph>
+      <coworker>
+        <item name="Name" attribute="name" type="text" />
+        <item name="Email" attribute="email" type="text" />
+        <item name="Role" attribute="role" type="text" />
+        <item name="Picture" attribute="picture" type="choosefile" />
+        <item name="Text" attribute="text" type="textarea" />
+        <item name="Category" attribute="category" type="text" />
+      </coworker>
+      <top>
+        <item name="Menu name" attribute="menuname" type="text" />
+        <item name="Page name" attribute="pagename" type="text" />
+        <item name="Last edited" attribute="lastedited" type="text" />
+		    <item name="Keywords" attribute="metakeywords" type="text" />
+		    <item name="Description" attribute="metadescription" type="text" />
+		    <item name="Status" attribute="status" type="statuslist" />
+      </top>
+    </elementlist>
+    <treeFilename>~/Custom/App_Data/database/tree.xml</treeFilename>
+    <contentRoot>~/Custom/App_Data/database/site/</contentRoot>
+    <contentFilenameFormat>{0}.xml</contentFilenameFormat>
+    <pagestatus>
+      <open>Show in menu</open>
+      <hide>Hide from menu</hide>
+      <closed>Not viewable</closed>
+    </pagestatus>
+  </sitetree>
+  <general>
+    <stdprocess>show/english/about</stdprocess>
+    <customrootcomponents>~/Custom/Components</customrootcomponents>
+    <systemrootcomponents>~/System/Components</systemrootcomponents>
+    <sitedataroot>~/Custom/App_Data</sitedataroot>
+  </general>
+  <admin>
+    <menu>
+      <item event="logout" weight="999">Log out</item>
+      <item event="update" weight="998">Update system</item>
+      <item event="clear" weight="997">Clear cache</item>
+      <item path="admin/changelog" weight="22">Changelog</item>
+      <item path="admin/file" weight="10">Files</item>
+      <item path="admin/page" weight="0">Pages</item>
+      <item path="admin/user" weight="20">Users</item>
+    </menu>
+  </admin>
+  <common>
+    <cleanChars>
+      <anywhere>abcdefghijklomnopqrstuvwqxyz_</anywhere>
+      <notInBeginning>1234567890-.</notInBeginning>
+    </cleanChars>
+    <mimetypes>
+      <defaulttype>application/octet-stream</defaulttype>
+      <bmp>image/bmp</bmp>
+      <doc>application/msword</doc>
+      <gif>image/gif</gif>
+      <html>text/html</html>
+      <htm>text/html</htm>
+      <jpg>image/jpeg</jpg>
+      <jpeg>image/jpeg</jpeg>
+      <jpe>image/jpeg</jpe>
+      <pdf>application/pdf</pdf>
+      <png>image/png</png>
+      <rtf>application/rtf</rtf>
+      <tiff>image/tiff</tiff>
+      <tif>image/tiff</tif>
+      <txt>text/plain</txt>
+      <xml>text/xml</xml>
+      <xsl>text/xml</xsl>
+      <xslt>text/xml</xslt>
+      <xhtml>application/xhtml+xml</xhtml>
+      <zip>application/zip</zip>
+    </mimetypes>
+  </common>
+  <loadxml>
+    <changelog>~/System/Components/Changelog/changelog.xml</changelog>
+  </loadxml>
+  <errorlog>
+    <logpath>~/Custom/App_Data/log.log</logpath>
+  </errorlog>
+  <filetree>
+    <filesPath>~/Custom/App_Data/Files</filesPath>
+  </filetree>
+  <users>
+    <filename>~/Custom/App_Data/Users.xml</filename>
+  </users>
+</settings>

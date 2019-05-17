@@ -23,8 +23,11 @@ bld/
 [Bb]in/
 [Oo]bj/
 [Ll]og/
+<<<<<<< HEAD
+=======
 [Pp]ublished
 [Dd]rop
+>>>>>>> develop
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
@@ -301,8 +304,13 @@ __pycache__/
 *.pyc
 
 # Cake - Uncomment if you are using it
+<<<<<<< HEAD
+# tools/**
+# !tools/packages.config
+=======
 tools/**
 !tools/packages.config
+>>>>>>> develop
 
 # Tabs Studio
 *.tss
@@ -329,4 +337,8 @@ ASALocalRun/
 *.nvuser
 
 # MFractors (Xamarin productivity tool) working folder 
+<<<<<<< HEAD
 .mfractor/
+=======
+.mfractor/
+>>>>>>> develop

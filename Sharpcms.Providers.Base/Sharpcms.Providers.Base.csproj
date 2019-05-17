@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sharpcms.Base.Library\Sharpcms.Base.Library.csproj" />
+    <ProjectReference Include="..\Sharpcms.Data.FileTree\Sharpcms.Data.FileTree.csproj" />
+    <ProjectReference Include="..\Sharpcms.Data.SiteTree\Sharpcms.Data.SiteTree.csproj" />
+  </ItemGroup>
+
+</Project>

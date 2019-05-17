@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<page>
+  <attributes>
+    <pagename>Quellen</pagename>
+    <name>null</name>
+    <menuname>Quellen</menuname>
+    <pageidentifier>german/imprint/null</pageidentifier>
+    <status>hide</status>
+    <lastedited></lastedited>
+    <metakeywords></metakeywords>
+    <metadescription></metadescription>
+    <template></template>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="header">
+          <text>Quellen</text>
+          <headerstyle>Header1</headerstyle>
+          <offset>none</offset>
+        </element>
+        <element type="paragraph">
+          <header></header>
+          <headerstyle>Header1</headerstyle>
+          <text>&lt;p&gt;&lt;strong&gt;Hauptentwickler&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Mads H&amp;oslash;bye (Programmierer)&lt;/li&gt;&lt;li&gt;Lars Sehested Geisler (Programmierer)&lt;/li&gt;&lt;li&gt;Robert Kristiansen (Design)&lt;/li&gt;&lt;li&gt;Gert J&amp;oslash;rgensen (CSS and tebellenloses HTML)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;strong&gt;Weitere Open Source Projekte die von sharpcms genutzt werden&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;TinyMCE - WYSIWYG&lt;/li&gt;&lt;li&gt;Nifty corners&lt;/li&gt;&lt;li&gt;WebFX - tabpane&lt;/li&gt;&lt;li&gt;Destroydrop -&amp;nbsp;Dtree &lt;/li&gt;&lt;/ul&gt;</text>
+          <link></link>
+          <picture></picture>
+          <picturepos>Left</picturepos>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

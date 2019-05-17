@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<page>
+  <attributes>
+    <pagename>Install</pagename>
+    <name>install</name>
+    <menuname>Install</menuname>
+    <pageidentifier>english/support/install</pageidentifier>
+    <status>open</status>
+    <lastedited></lastedited>
+  </attributes>
+  <containers>
+    <container name="content">
+      <elements>
+        <element type="paragraph">
+          <header>How to install</header>
+          <text></text>
+          <link></link>
+          <picture></picture>
+        </element>
+      </elements>
+    </container>
+  </containers>
+</page>

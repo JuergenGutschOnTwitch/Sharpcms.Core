@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sharpcms.Base.Core\Sharpcms.Base.Core.csproj" />
+    <ProjectReference Include="..\Sharpcms.Base.Library\Sharpcms.Base.Library.csproj" />
+    <ProjectReference Include="..\Sharpcms.Providers.Base\Sharpcms.Providers.Base.csproj" />
+    <ProjectReference Include="..\Sharpcms.Providers.Cookies\Sharpcms.Providers.Cookies.csproj" />
+    <ProjectReference Include="..\Sharpcms.Providers.ErrorLog\Sharpcms.Providers.ErrorLog.csproj" />
+    <ProjectReference Include="..\Sharpcms.Providers.Search\Sharpcms.Providers.Search.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Custom\**" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="System\**" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>
