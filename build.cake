@@ -8,7 +8,7 @@ var buildnumber = Argument("buildnumber", "0");
 var publishfolder = Argument("publishfolder", "./drop/");
 
 var build =  environment != "Production" ? String.Format("-build{0}", buildnumber) : "";
-var version = "2.0.0";
+var version = "2.1.0";
 var artifactName = $"Sharpcms.Core-{version}{build}.zip";
 
 Task("CleanDirectory")
