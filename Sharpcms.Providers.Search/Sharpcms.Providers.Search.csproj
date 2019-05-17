@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -11,10 +11,10 @@
 
   <ItemGroup>
     <Reference Include="Highlighter.Net">
-      <HintPath>..\..\sharpcms-original\sources\resources\Highlighter.Net.dll</HintPath>
+      <HintPath>..\libs\Highlighter.Net.dll</HintPath>
     </Reference>
     <Reference Include="Lucene.Net">
-      <HintPath>..\..\sharpcms-original\sources\resources\Lucene.Net.dll</HintPath>
+      <HintPath>..\libs\Lucene.Net.dll</HintPath>
     </Reference>
   </ItemGroup>
 
