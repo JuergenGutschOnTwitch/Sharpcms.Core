@@ -20,10 +20,10 @@ namespace Sharpcms.Base.Library.Plugin
             get
             {
                 AvailablePlugin availablePlugin = AvailablePlugins.Find(pluginNameOrPath);
-                IPlugin plugin = availablePlugin == null 
-                    ? null 
+                IPlugin plugin = availablePlugin == null
+                    ? null
                     : availablePlugin.Instance;
-                
+
                 return plugin;
             }
         }
@@ -112,7 +112,7 @@ namespace Sharpcms.Base.Library.Plugin
             _colAvailablePlugins.Clear();
 
             //Go through all the files in the plugin directory
-            foreach (String fileOn in Directory.GetFiles(path,"*.dll", SearchOption.AllDirectories))
+            foreach (String fileOn in Directory.GetFiles(path, "*.dll", SearchOption.AllDirectories))
             {
                 FileInfo file = new FileInfo(fileOn);
 
@@ -166,7 +166,8 @@ namespace Sharpcms.Base.Library.Plugin
                         if (typeInterface != null)
                         {
                             //Create a new available plugin since the type implements the IPlugin interface
-                            AvailablePlugin newPlugin = new AvailablePlugin {
+                            AvailablePlugin newPlugin = new AvailablePlugin
+                            {
                                 //Set the filename where we found it
                                 AssemblyPath = fileName,
 
@@ -175,7 +176,7 @@ namespace Sharpcms.Base.Library.Plugin
                                 //1- Make one instance, and use it whenever we need it.. it's always there
                                 //2- Don't make an instance, and instead make an instance whenever we use it, then close it
                                 //For now we'll just make an instance of all the plugins
-                                Instance = (IPlugin) Activator.CreateInstance(pluginAssembly.GetType(pluginType.ToString()))
+                                Instance = (IPlugin)Activator.CreateInstance(pluginAssembly.GetType(pluginType.ToString()))
                             };
 
                             //Set the Plugin's host to this class which inherited IPluginHost
@@ -193,7 +194,7 @@ namespace Sharpcms.Base.Library.Plugin
                                 //Add the new plugin to our collection here
                                 _colAvailablePlugins.Add(newPlugin);
                             }
-                        }		
+                        }
                     }
                 }
             }
